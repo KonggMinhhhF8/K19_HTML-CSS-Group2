@@ -15,11 +15,9 @@
 
     <!-- tailwind css -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-    <!-- css -->
-    <link rel="stylesheet" href="./css/pricing-page.css" />
   </head>
-  <body>
+  <body class="bg-[#FAFDF2] font-['Urbanist',_sans-serif]">
+    <!-- header -->
     <header class="bg-[#1A3129]">
       <!-- banner -->
       <div class="py-3.5 border-b border-b-solid border-b-[#2C5446]">
@@ -99,12 +97,197 @@
             </li>
           </ul>
           <button
-            class="w-34.25 h-13.75 flex items-center justify-center bg-[#CBEA7B] text-[#262626] font-semibold rounded-lg ml-6.75 cursor-pointer"
+            class="w-34.25 h-13.75 flex items-center justify-center bg-[#CBEA7B] text-lg text-[#262626] font-semibold rounded-lg ml-6.75 cursor-pointer"
           >
             Contact Us
           </button>
         </div>
       </nav>
     </header>
+
+    <!-- main -->
+    <main class="main">
+      <!-- introduction -->
+      <section
+        class="container mx-auto bg-[#F6FBE9] relative mt-25 py-25 text-center border border-solid border-[#E5F5BD]"
+      >
+        <img
+          src="./img/img-decore-title.svg"
+          alt=""
+          class="absolute top-0 left-[50%] translate-x-[-50%]"
+        />
+        <img
+          src="./img/icon-container.png"
+          alt="icon-container"
+          class="block mx-auto mb-20 relative z-1"
+        />
+        <h1 class="mt-20 text-[#262626] text-5xl font-semibold">Our Pricing</h1>
+        <p class="mt-5 px-25 text-[#333] text-lg font-medium">
+          At Nutritionist, we offer flexible pricing options to accommodate your
+          unique requirements and budget. Our goal is to provide you with
+          exceptional personalized nutrition coaching that is accessible and
+          tailored to your needs. Choose from our three plans below and take the
+          first step towards a healthier lifestyle
+        </p>
+      </section>
+
+      <!-- service -->
+      <section class="mt-25 group">
+        <div
+          class="flex w-58.25 h-16.75 mx-auto p-2.5 border border-solid border-[#DCF1A7] rounded-lg"
+        >
+          <input
+            type="radio"
+            name="plan"
+            id="monthly"
+            class="peer/monthly hidden"
+            checked
+          />
+          <input
+            type="radio"
+            name="plan"
+            id="yearly"
+            class="peer/yearly hidden"
+          />
+          <label
+            for="monthly"
+            class="flex justify-center items-center grow-1 font-semibold text-lg text-[#4C4C4C] peer-checked/monthly:bg-[#234338] peer-checked/monthly:text-[#FFF] peer-checked/monthly:rounded-md cursor-pointer"
+            >Monthly</label
+          >
+          <label
+            for="yearly"
+            class="flex justify-center items-center grow-1 font-semibold text-lg text-[#4C4C4C] peer-checked/yearly:bg-[#234338] peer-checked/yearly:text-[#FFF] peer-checked/yearly:rounded-md cursor-pointer"
+            >Yearly</label
+          >
+        </div>
+        <span
+          class="block mt-3.5 font-medium text-center text-lg text-[#4C4C4D]"
+          >Save 50% on Yearly</span
+        >
+
+        <!-- plans -->
+        <div class="container mt-12.5 mx-auto grid grid-cols-3 gap-7.5">
+          <!-- Basic plan -->
+          <div class="p-12.5 bg-[#F6FBE9] border border-solid border-[#EEF8D3]">
+            <h2 class="font-semibold text-3xl text-[#262626]">Basic Plan</h2>
+            <span class="block mt-2 font-medium text-lg text-[#4C4C4D]"
+              >Up to 50% off on Yearly Plan</span
+            >
+            <ul class="my-10 bg-[#EEF8D3] border border-solid border-[#E5F5BD]">
+              <li class="px-6 py-5 border-b border-b-solid border-b-[#DCF1A7]">
+                Personalized nutrition plan tailored to your goals and dietary
+                preferences.
+              </li>
+              <li class="px-6 py-5 border-b border-b-solid border-b-[#DCF1A7]">
+                Access to our mobile app for convenient meal tracking and
+                progress monitoring.
+              </li>
+              <li class="px-6 py-5 border-b border-b-solid border-b-[#DCF1A7]">
+                Email support to address your questions and concerns.
+              </li>
+              <li class="px-6 py-5">
+                Regular check-ins with a dedicated nutritionist to review your
+                progress and provide guidance.
+              </li>
+            </ul>
+            <!-- month -->
+            <div
+              class="group-has-[#yearly:checked]:hidden group-has-[#monthly:checked]:flex items-center"
+            >
+              <span class="font-bold text-[#2C5446] text-[50px]">$49</span>
+              <span class="font-medium text-lg text-[#333] ml-1">/month</span>
+            </div>
+            <!-- year -->
+            <div
+              class="group-has-[#monthly:checked]:hidden group-has-[#yearly:checked]:flex items-center"
+            >
+              <span class="font-bold text-[#2C5446] text-[50px]">$294</span>
+              <span class="font-medium text-lg text-[#333] ml-1">/year</span>
+            </div>
+            <button class="w-full h-14.5 bg-[#CBEA7B] cursor-pointer rounded-lg font-semibold text-lg text-[#262626]">Choose Plan</button>
+          </div>
+          
+          <!-- Basic plan -->
+          <div class="p-12.5 bg-[#F6FBE9] border border-solid border-[#EEF8D3]">
+            <h2 class="font-semibold text-3xl text-[#262626]">Basic Plan</h2>
+            <span class="block mt-2 font-medium text-lg text-[#4C4C4D]"
+              >Up to 50% off on Yearly Plan</span
+            >
+            <ul class="my-10 bg-[#EEF8D3] border border-solid border-[#E5F5BD]">
+              <li class="px-6 py-5 border-b border-b-solid border-b-[#DCF1A7]">
+                Personalized nutrition plan tailored to your goals and dietary
+                preferences.
+              </li>
+              <li class="px-6 py-5 border-b border-b-solid border-b-[#DCF1A7]">
+                Access to our mobile app for convenient meal tracking and
+                progress monitoring.
+              </li>
+              <li class="px-6 py-5 border-b border-b-solid border-b-[#DCF1A7]">
+                Email support to address your questions and concerns.
+              </li>
+              <li class="px-6 py-5">
+                Regular check-ins with a dedicated nutritionist to review your
+                progress and provide guidance.
+              </li>
+            </ul>
+            <!-- month -->
+            <div
+              class="group-has-[#yearly:checked]:hidden group-has-[#monthly:checked]:flex items-center"
+            >
+              <span class="font-bold text-[#2C5446] text-[50px]">$49</span>
+              <span class="font-medium text-lg text-[#333] ml-1">/month</span>
+            </div>
+            <!-- year -->
+            <div
+              class="group-has-[#monthly:checked]:hidden group-has-[#yearly:checked]:flex items-center"
+            >
+              <span class="font-bold text-[#2C5446] text-[50px]">$294</span>
+              <span class="font-medium text-lg text-[#333] ml-1">/year</span>
+            </div>
+            <button class="w-full h-14.5 bg-[#CBEA7B] cursor-pointer rounded-lg font-semibold text-lg text-[#262626]">Choose Plan</button>
+          </div>
+          
+          <!-- Basic plan -->
+          <div class="p-12.5 bg-[#F6FBE9] border border-solid border-[#EEF8D3]">
+            <h2 class="font-semibold text-3xl text-[#262626]">Basic Plan</h2>
+            <span class="block mt-2 font-medium text-lg text-[#4C4C4D]"
+              >Up to 50% off on Yearly Plan</span
+            >
+            <ul class="my-10 bg-[#EEF8D3] border border-solid border-[#E5F5BD]">
+              <li class="px-6 py-5 border-b border-b-solid border-b-[#DCF1A7]">
+                Personalized nutrition plan tailored to your goals and dietary
+                preferences.
+              </li>
+              <li class="px-6 py-5 border-b border-b-solid border-b-[#DCF1A7]">
+                Access to our mobile app for convenient meal tracking and
+                progress monitoring.
+              </li>
+              <li class="px-6 py-5 border-b border-b-solid border-b-[#DCF1A7]">
+                Email support to address your questions and concerns.
+              </li>
+              <li class="px-6 py-5">
+                Regular check-ins with a dedicated nutritionist to review your
+                progress and provide guidance.
+              </li>
+            </ul>
+            <!-- month -->
+            <div
+              class="group-has-[#yearly:checked]:hidden group-has-[#monthly:checked]:flex items-center"
+            >
+              <span class="font-bold text-[#2C5446] text-[50px]">$49</span>
+              <span class="font-medium text-lg text-[#333] ml-1">/month</span>
+            </div>
+            <!-- year -->
+            <div
+              class="group-has-[#monthly:checked]:hidden group-has-[#yearly:checked]:flex items-center"
+            >
+              <span class="font-bold text-[#2C5446] text-[50px]">$294</span>
+              <span class="font-medium text-lg text-[#333] ml-1">/year</span>
+            </div>
+            <button class="w-full h-14.5 bg-[#CBEA7B] cursor-pointer rounded-lg font-semibold text-lg text-[#262626]">Choose Plan</button>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
