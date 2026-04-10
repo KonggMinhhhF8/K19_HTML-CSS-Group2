@@ -5,8 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pricing Page</title>
 
+    <!-- embed font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- tailwind css -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/pricing-page.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="bg-[#1A3129]">
+      <!-- banner -->
+      <div class="py-3.5 border-b border-b-solid border-b-[#2C5446]">
+        <div
+          class="flex relative container mx-auto py-2.75 justify-center items-center bg-[#234338] border border-solid border-[#2C5446]"
+        >
+          <!-- left -->
+          <a href="#!" class="flex">
+            <img
+              src="./img/banner-left.svg"
+              alt=""
+              class="absolute top-0 left-10"
+            />
+
+            <img src="./img/icon-banner.svg" alt="icon banner" />
+            <p class="ml-1.5 mr-5 font-medium text-[#fff]">
+              Join Our Personalized Nutrition Demo For Free
+            </p>
+            <img src="./img/arow-right.svg" alt="" />
+          </a>
+
+          <!-- right -->
+          <img
+            src="./img/banner-right.svg"
+            alt=""
+            class="absolute absolute top-0 right-10"
+          />
+        </div>
+      </div>
+
+      <!-- nav -->
+      <nav class="flex container mx-auto py-5 items-center justify-between">
+        <a href="#"><img src="./img/Logo.png" alt="Nutritionist" /></a>
+        <div class="flex items-center">
+          <ul class="flex text-lg font-semibold text-[#FAFDF2]">
+            <li>
+              <a
+                href="#!"
+                class="p-3.25 hover:text-[#CBEA7B] ease-in-out transition-colors duration-300"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#!"
+                class="p-3.25 hover:text-[#CBEA7B] ease-in-out transition-colors duration-300"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#!"
+                class="p-3.25 hover:text-[#CBEA7B] ease-in-out transition-colors duration-300"
+                >Team</a
+              >
+            </li>
+            <li>
+              <a
+                href="#!"
+                class="p-3.25 hover:text-[#CBEA7B] ease-in-out transition-colors duration-300"
+                >Process</a
+              >
+            </li>
+            <li>
+              <a
+                href="#!"
+                class="p-3.25 hover:text-[#CBEA7B] ease-in-out transition-colors duration-300"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                href="#!"
+                class="p-3.25 hover:text-[#CBEA7B] ease-in-out transition-colors duration-300"
+                >Blog</a
+              >
+            </li>
+          </ul>
+          <button
+            class="w-34.25 h-13.75 flex items-center justify-center bg-[#CBEA7B] text-[#262626] font-semibold rounded-lg ml-6.75 cursor-pointer"
+          >
+            Contact Us
+          </button>
+        </div>
+      </nav>
+    </header>
+  </body>
 </html>
