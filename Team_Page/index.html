@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Page - Nutritionist</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-dark': '#1A3129',   /* Màu xanh lá đậm của Header/Footer */
+                        'brand-light': '#F6FBE9',  /* Màu nền xanh lợt của trang */
+                        'brand-primary': '#C1F05D',/* Màu xanh đọt chuối của nút bấm */
+                        'brand-text': '#333333'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'], // Giả sử dùng font Inter
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-light text-brand-text antialiased">
+
+    <header class="w-full font-['Urbanist',sans-serif]">
+    
+        <div class="relative w-full h-[72px] bg-[#1A3129] border-b border-[#234338] px-4 xl:px-[162px] py-[14px] flex items-center justify-center overflow-hidden">
+            
+            <div class="absolute left-[-20px] top-[-20px] w-[194px] h-[100px] border-[4.12px] border-dashed border-[#CBEA7B] opacity-20 rotate-180"></div>
+
+            <div class="relative z-10 flex items-center justify-center w-full max-w-[1596px] h-[44px] px-[20px] py-[10px] gap-[20px] border border-[#234338] rounded-[6px] bg-[#1A3129]">
+                
+                <div class="flex items-center gap-[6px]">
+                    <span class="mdi mdi-basketball text-white text-[20px]"></span>
+                    
+                    <span class="text-white text-[18px] font-medium leading-none">
+                        Join Our Personalized Nutrition Demo For Free
+                    </span>
+                    
+                    <span class="mdi mdi-arrow-right text-white text-[16.8px] ml-1"></span>
+                </div>
+
+            </div>
+
+            <div class="absolute right-[-20px] top-[-20px] w-[194px] h-[100px] border-[4.12px] border-dashed border-[#CBEA7B] opacity-20"></div>
+        </div>
+
+        <nav class="w-full h-[95px] bg-[#1A3129] border-b border-[#EEF8D3] px-4 xl:px-[162px] py-[20px] flex justify-between items-center">
+            
+            <div class="flex items-center gap-2">
+                <div class="w-[45px] h-[45px] flex items-center justify-center">
+                    <span class="mdi mdi-clover text-[#CBEA7B] text-[36px]"></span>
+                </div>
+                <span class="text-white font-bold text-[24px]">Nutritionist</span>
+            </div>
+
+            <div class="hidden xl:flex items-center gap-[40px]">
+                
+                <ul class="flex items-center gap-[26px] text-white text-[18px] font-medium">
+                    <li class="cursor-pointer hover:text-[#CBEA7B] transition">Home</li>
+                    <li class="cursor-pointer hover:text-[#CBEA7B] transition">About</li>
+                    <li class="cursor-pointer text-[#CBEA7B] transition">Team</li>
+                    <li class="cursor-pointer hover:text-[#CBEA7B] transition">Process</li>
+                    <li class="cursor-pointer hover:text-[#CBEA7B] transition">Pricing</li>
+                    <li class="cursor-pointer hover:text-[#CBEA7B] transition">Blog</li>
+                </ul>
+
+                <button class="bg-[#CBEA7B] text-[#262626] text-[18px] font-semibold px-[24px] py-[14px] rounded-[8px] h-[55px] w-[137px] flex items-center justify-center hover:bg-opacity-90 transition">
+                    Contact Us
+                </button>
+                
+            </div>
+
+            <label for="menu-toggle" class="xl:hidden cursor-pointer text-white">
+                <span class="mdi mdi-menu text-3xl"></span>
+            </label>
+        </nav>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        
+        <section class="text-center max-w-3xl mx-auto mb-16">
+            <div class="inline-flex items-center justify-center w-12 h-12 bg-[#E5F5CC] rounded-xl mb-6">
+                <span class="mdi mdi-clover text-2xl text-brand-dark"></span>
+            </div>
+            
+            <h1 class="text-4xl md:text-5xl font-bold text-brand-dark mb-6">
+                Meet Our Team of Experts
+            </h1>
+            
+            <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                Our team at Nutritionist is composed of highly skilled professionals who are passionate about helping you achieve your health and wellness goals. With a diverse range of expertise in nutrition, coaching, and support, our team is dedicated to providing you with the guidance and personalized care you need. Get to know the experts behind our success and discover how they can make a positive impact on your journey to better health.
+            </p>
+        </section>
+
+        <section id="tabs" class="mb-12">
+            <div class="bg-brand-dark rounded-xl p-2 md:p-3 flex overflow-x-auto hide-scrollbar whitespace-nowrap gap-2 md:gap-4 text-sm font-medium shadow-lg">
+                <button class="bg-[#2C4C3B] text-white px-6 py-3 rounded-lg transition">
+                    Management Team
+                </button>
+                
+                <button class="text-gray-300 hover:text-white px-6 py-3 rounded-lg hover:bg-[#2C4C3B] transition">
+                    Nutritionists and Dietitians
+                </button>
+                <button class="text-gray-300 hover:text-white px-6 py-3 rounded-lg hover:bg-[#2C4C3B] transition">
+                    Customer Support
+                </button>
+                <button class="text-gray-300 hover:text-white px-6 py-3 rounded-lg hover:bg-[#2C4C3B] transition">
+                    Marketing and Communications
+                </button>
+                <button class="text-gray-300 hover:text-white px-6 py-3 rounded-lg hover:bg-[#2C4C3B] transition">
+                    Technology and Development
+                </button>
+            </div>
+        </section>
+
+        <section id="team-grid">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="relative bg-[#E5F5CC] rounded-2xl h-[380px] flex flex-col items-center justify-end overflow-hidden group">
+                    <img src="https://i.pravatar.cc/400?img=1" alt="Sarah Mitchell" class="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105" />
+                    
+                    <div class="absolute bottom-0 left-0 bg-white pt-4 pr-6 pb-4 pl-4 rounded-tr-2xl rounded-bl-2xl w-[85%] z-10 shadow-sm border-t border-r border-[#F6FBE9]">
+                        <h3 class="font-bold text-brand-dark text-lg">Sarah Mitchell</h3>
+                        <p class="text-gray-500 text-sm mt-1">Founder and CEO</p>
+                    </div>
+                </div>
+
+                <div class="relative bg-[#E5F5CC] rounded-2xl h-[380px] flex flex-col items-center justify-end overflow-hidden group">
+                    <img src="https://i.pravatar.cc/400?img=5" alt="Emily Thompson" class="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105" />
+                    <div class="absolute bottom-0 left-0 bg-white pt-4 pr-6 pb-4 pl-4 rounded-tr-2xl rounded-bl-2xl w-[85%] z-10 shadow-sm border-t border-r border-[#F6FBE9]">
+                        <h3 class="font-bold text-brand-dark text-lg">Emily Thompson</h3>
+                        <p class="text-gray-500 text-sm mt-1">Chief Operating Officer</p>
+                    </div>
+                </div>
+
+                <div class="relative bg-[#E5F5CC] rounded-2xl h-[380px] flex flex-col items-center justify-end overflow-hidden group">
+                    <img src="https://i.pravatar.cc/400?img=11" alt="John Davis" class="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105" />
+                    <div class="absolute bottom-0 left-0 bg-white pt-4 pr-6 pb-4 pl-4 rounded-tr-2xl rounded-bl-2xl w-[85%] z-10 shadow-sm border-t border-r border-[#F6FBE9]">
+                        <h3 class="font-bold text-brand-dark text-lg">John Davis</h3>
+                        <p class="text-gray-500 text-sm mt-1">Chief Financial Officer</p>
+                    </div>
+                </div>
+
+                <div class="relative bg-[#E5F5CC] rounded-2xl h-[380px] flex flex-col items-center justify-end overflow-hidden group">
+                    <img src="https://i.pravatar.cc/400?img=9" alt="Rachel Adams" class="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105" />
+                    <div class="absolute bottom-0 left-0 bg-white pt-4 pr-6 pb-4 pl-4 rounded-tr-2xl rounded-bl-2xl w-[85%] z-10 shadow-sm border-t border-r border-[#F6FBE9]">
+                        <h3 class="font-bold text-brand-dark text-lg">Rachel Adams</h3>
+                        <p class="text-gray-500 text-sm mt-1">Chief Marketing Officer</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="relative w-full max-w-[1596px] mx-auto bg-[#F6FBE9] rounded-[24px] px-[80px] py-[60px] flex items-center justify-between overflow-hidden font-['Urbanist',sans-serif] mt-12 mb-20 shadow-sm border border-[#EEF8D3]">
+    
+        <div class="absolute top-0 left-0 w-[200px] h-[200px] pointer-events-none opacity-30">
+            <div class="absolute top-[-50px] left-[-50px] w-[150px] h-[150px] bg-[#CBEA7B] rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="absolute bottom-0 right-0 w-[200px] h-[200px] pointer-events-none opacity-30">
+            <div class="absolute bottom-[-50px] right-[-50px] w-[150px] h-[150px] bg-[#CBEA7B] rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="relative z-10 flex flex-col gap-[14px] w-[1149px] max-w-[75%]">
+            
+            <h2 class="text-[#262626] text-[34px] font-semibold leading-[1.5] m-0">
+                Join Our Team
+            </h2>
+            
+            <p class="text-[#333333] text-[18px] font-medium leading-[1.5] m-0">
+                We are always on the lookout for talented individuals who are enthusiastic about making a difference. Explore our career opportunities and join us in our mission to help people achieve their health and wellness goals.
+            </p>
+            
+        </div>
+
+        <button class="relative z-10 flex items-center justify-center w-[137px] h-[63px] px-[24px] py-[18px] bg-[#CBEA7B] text-[#262626] text-[18px] font-semibold leading-[1.5] rounded-[8px] hover:bg-[#b8db6a] hover:shadow-md transition duration-300 whitespace-nowrap">
+            Apply Now
+        </button>
+
+    </section>
+    <footer class="bg-[#1A3129] border-t border-[#262626] pt-[50px] pb-[50px] px-4 lg:px-[100px] xl:px-[162px] flex flex-col gap-[50px] text-white">
+    
+        <div class="flex flex-col lg:flex-row justify-between items-center gap-8">
+            <div class="flex items-center gap-2 font-bold text-2xl">
+                <span class="mdi mdi-clover text-[#C1F05D]"></span> Nutritionist
+            </div>
+
+            <nav>
+                <ul class="flex flex-wrap justify-center gap-6 text-sm font-medium">
+                    <li class="cursor-pointer hover:text-[#C1F05D] transition">Home</li>
+                    <li class="cursor-pointer hover:text-[#C1F05D] transition">About</li>
+                    <li class="cursor-pointer hover:text-[#C1F05D] transition">Team</li>
+                    <li class="cursor-pointer hover:text-[#C1F05D] transition">Process</li>
+                    <li class="cursor-pointer hover:text-[#C1F05D] transition">Pricing</li>
+                    <li class="cursor-pointer hover:text-[#C1F05D] transition">Blog</li>
+                    <li class="cursor-pointer hover:text-[#C1F05D] transition">Contact</li>
+                </ul>
+            </nav>
+
+            <div class="flex items-center gap-4 cursor-pointer group" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                <span class="text-sm font-medium">Got To Top</span>
+                <div class="w-12 h-12 rounded-full bg-[#244237] group-hover:bg-[#C1F05D] group-hover:text-[#1A3129] transition flex items-center justify-center">
+                    <span class="mdi mdi-arrow-up text-xl"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-[#1A3129] border border-[#2C4C3B] rounded-xl p-4 md:p-6 flex flex-col xl:flex-row justify-between items-center gap-6">
+            
+            <div class="flex flex-col md:flex-row gap-4 w-full xl:w-auto">
+                
+                <div class="border border-[#2C4C3B] rounded-lg px-5 py-3 flex items-center justify-center md:justify-start gap-2 text-sm flex-1">
+                    <span class="mdi mdi-email text-[#C1F05D] text-lg"></span>
+                    <span>hello@squareup.com</span>
+                </div>
+                
+                <div class="border border-[#2C4C3B] rounded-lg px-5 py-3 flex items-center justify-center md:justify-start gap-2 text-sm flex-1">
+                    <span class="mdi mdi-phone text-[#C1F05D] text-lg"></span>
+                    <span>+91 91813 23 2309</span>
+                </div>
+                
+                <div class="border border-[#2C4C3B] rounded-lg px-5 py-3 flex items-center justify-center md:justify-start gap-2 text-sm flex-1">
+                    <span class="mdi mdi-map-marker text-[#C1F05D] text-lg"></span>
+                    <span>Somewhere in the World</span>
+                </div>
+
+            </div>
+
+            <div class="text-sm text-gray-300 whitespace-nowrap">
+                &copy; 2023 Nutritionist. All rights reserved.
+            </div>
+        </div>
+
+    </footer>
+
+    </main>
+
+</body>
+</html>
