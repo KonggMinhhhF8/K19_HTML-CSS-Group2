@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>About Page</title>
-    <style type="text/tailwindcss">
-        @layer base {
+    <style type="text/tailwindcss"> @layer base {
             html {
                 scroll-behavior: smooth;
             }
@@ -20,7 +19,7 @@
             --color-green-70: #CBEA7B; 
             --color-green-75: #D3EE91;
             --color-green-80: #DCF1A7;
-            --color-green-85: #F5F5BD;
+            --color-green-85: #E5F5BD;
             --color-green-90: #EEF8D3;
             --color-green-95: #F4FCE9;
             --color-green-97: #FCFDF0;
@@ -52,231 +51,279 @@
         }
 
     </style>
-</head>
-<body>
-    <header class="bg-dark-green-15 w-full fixed">
-        <div class="flex h-18 items-center justify-center border-b border-dark-green-25 hover:opacity-75 cursor-pointer">
-            <div class="bg-dark-green-20 h-11 w-[1596px] border border-dark-green-25 rounded-md flex items-center justify-evenly gap-[346.83px] overflow-hidden"> 
-                <img src="./assets/abstract/path.png" class="w-[194.17px] h-[100px]">
-                <div class="flex items-center justify-center gap-[20px]">
-                    <div>
-                        <div class="flex items-center gap-[6px]">
-                            <img src="./assets/abstract/header-icon.png" alt="icon" class="w-6 h-6">
-                            <p class="text-lg text-absolute-white">Join Our Personalized Nutrition Demo For Free</p>
-                        </div>
-                    </div>
-                    <div class="text-absolute-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                    </svg>
-                    </div>
-                </div>
-                <img src="./assets/abstract/path.png" class="w-[194.17px] h-[100px] scale-x-[-1]">
+  </head>
+  <body>
+    <header class="bg-dark-green-15 w-full fixed z-100">
+      <div class="w-full px-[132px] flex h-18 items-center justify-center border-b border-dark-green-25 hover:opacity-75 cursor-pointer">
+        <div class="bg-dark-green-20 h-11 w-full border border-dark-green-25 rounded-md flex items-center justify-between overflow-hidden">
+          <img src="./assets/abstract/path.png" class="w-[194.17px] h-[100px]">
+          <div class="flex items-center justify-center gap-[20px]">
+            <div>
+              <div class="flex items-center gap-[6px]">
+                <img src="./assets/abstract/header-icon.png" alt="icon" class="w-6 h-6">
+                <p class="text-lg text-absolute-white">Join Our Personalized Nutrition Demo For Free</p>
+              </div>
             </div>
-        </div>
-        <div class="flex h-[95px] justify-center items-center">
-            <div class="w-[1596px] flex items-center justify-between">
-                <a href="index.html"><img src="./assets/logo/desktop_logo.png" alt="logo" class="w-[194.62px] h-[45px]"></a>
-                <div class="flex gap-[40px] justify-center items-center">
-                    <ul class="flex gap-[26px] text-green-97 font-semibold text-lg leading-[1.5]">
-                        <li class="cursor-pointer transition-all duration-800 ease-in-out hover:text-green-70 hover:shadow-[inset_0_-2px_0_0_#CBEA7B]">Home</li>
-                        <li class="cursor-pointer transition-all duration-800 ease-in-out hover:text-green-70 hover:shadow-[inset_0_-2px_0_0_#CBEA7B]">About</li>
-                        <li class="cursor-pointer transition-all duration-800 ease-in-out hover:text-green-70 hover:shadow-[inset_0_-2px_0_0_#CBEA7B]">Team</li>
-                        <li class="cursor-pointer transition-all duration-800 ease-in-out hover:text-green-70 hover:shadow-[inset_0_-2px_0_0_#CBEA7B]">Process</li>
-                        <li class="cursor-pointer transition-all duration-800 ease-in-out hover:text-green-70 hover:shadow-[inset_0_-2px_0_0_#CBEA7B]">Pricing</li>
-                        <li class="cursor-pointer transition-all duration-800 ease-in-out hover:text-green-70 hover:shadow-[inset_0_-2px_0_0_#CBEA7B]">Block</li>
-                    </ul>
-                    <div class="flex">
-                        <!-- Dùng class group ở thẻ cha để khi hover vào button thì sẽ hiển thị icon. -->
-                        <button class="group transition-all duration-800 ease-in-out flex bg-green-70 py-[14px] px-[24px] overflow-hidden text-lg text-grey-15 font-semibold rounded-lg hover:bg-dark-green-25 hover:text-green-99 cursor-pointer gap-[10px]"> 
-                            <span>Contact Us</span>
-                            <!-- Trong tag <svg> để hidden thì mặc định không hiển thị và không chiếm không gian, sau đó thêm class group-hover:block để hiển thị khi hover -->
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 hidden group-hover:block">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
+            <div class="text-absolute-white">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+              </svg>
             </div>
+          </div>
+          <img src="./assets/abstract/path.png" class="w-[194.17px] h-[100px] scale-x-[-1]">
         </div>
+      </div>
+      <div class="w-full flex h-[95px] justify-center items-center">
+        <div class="w-full px-[132px] flex items-center justify-between">
+          <a href="index.html">
+            <img src="./assets/logo/desktop_logo.png" alt="logo" class="w-[194.62px] h-[45px]">
+          </a>
+          <div class="flex gap-[40px] justify-center items-center">
+            <ul class="flex gap-[26px] text-green-97 font-semibold text-lg leading-[1.5]">
+              <li class="cursor-pointer transition-all duration-800 ease-in-out hover:text-green-70 hover:shadow-[inset_0_-2px_0_0_#CBEA7B]">Home</li>
+              <li class="cursor-pointer transition-all duration-800 ease-in-out hover:text-green-70 hover:shadow-[inset_0_-2px_0_0_#CBEA7B]">About</li>
+              <li class="cursor-pointer transition-all duration-800 ease-in-out hover:text-green-70 hover:shadow-[inset_0_-2px_0_0_#CBEA7B]">Team</li>
+              <li class="cursor-pointer transition-all duration-800 ease-in-out hover:text-green-70 hover:shadow-[inset_0_-2px_0_0_#CBEA7B]">Process</li>
+              <li class="cursor-pointer transition-all duration-800 ease-in-out hover:text-green-70 hover:shadow-[inset_0_-2px_0_0_#CBEA7B]">Pricing</li>
+              <li class="cursor-pointer transition-all duration-800 ease-in-out hover:text-green-70 hover:shadow-[inset_0_-2px_0_0_#CBEA7B]">Block</li>
+            </ul>
+            <div class="flex">
+              <button class="group transition-all duration-800 ease-in-out flex bg-green-70 py-[14px] px-[24px] overflow-hidden text-lg text-grey-15 font-semibold rounded-lg hover:bg-dark-green-25 hover:text-green-99 cursor-pointer gap-[10px]">
+                <span>Contact Us</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 hidden group-hover:block">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
-    <main class="pt-[167px]">
-        <div class="flex gap-[100px] flex-col items-center m-auto">
-            <div class="pt-25 w-[1596.5px] h-[520px] flex items-center m-auto">
-                <img src="./assets/abstract/rec-large.png" alt="rec-large">
-            </div>
-            <div class="flex p-[100px] w-[1596px] h-[538px] bg-green-95 items-center m-auto flex-col gap-[50px] rounded-lg bg-green-95 border-green-85">
-                <h2 class="flex items-center font-semibold text-5xl text-grey-15 leading-[1.5]">Welcome to Nutritionist</h2>
-                <p class="flex w-[1396px] h-[216px] text-center text-grey-20 leading-[1.5] font-medium text-[18px] m-auto">
-                Your trusted source for personalized nutrition coaching. Our mission is to help you achieve your weight loss and health goals through tailored nutrition plans and expert guidance.<br> 
-                We understand that every individual is unique, and that's why we believe in providing personalized solutions that fit your lifestyle and preferences.<br>
-                With our team of qualified nutritionists and dietitians, we are dedicated to empowering you with the knowledge and tools you need to make lasting changes. Whether you want<br>
-                to shed those extra pounds, improve your overall well-being, or develop a healthier relationship with food, we are here to support you every step of the way<br>
-                At Nutritionist, we believe that healthy eating should be enjoyable and sustainable. We emphasize the importance of balanced nutrition, focusing on whole foods and mindful<br>
-                eating practices. Our approach is rooted in scientific research and evidence-based strategies, ensuring that you receive the most up-to-date and accurate information.<br>
-                Join our community of individuals committed to transforming their lives through nutrition. Take control of your health, boost your energy levels, and discover the joy of nourishing<br>
-                your body with wholesome foods. We are here to guide you towards a healthier, happier you.
-                </p>
-            </div>
+    <main class="pt-40 mr-[132px] ml-[132px]">
+      <div class="flex gap-[100px] flex-col items-center m-auto">
+        <div class="pt-25 flex pb-25">
+          <img src="./assets/abstract/rec-large.png" alt="small-large" class="wbg-green-70">
         </div>
-        <div class="mt-[150px] flex items-center m-auto flex-col">
-            <div class="flex m-auto w-[1596px] h-[136px] flex-col items-center gap-[10px] mb-[80px]">
-                <h2 class="flex justify-center text-grey-15 font-bold leading-[1.5] text-5xl">Our Story</h2>
-                <p class="flex text-center align-center leading-[1.5] text-[18px] text-grey-20 font-medium">Welcome to Nutritionist, your partner in achieving optimal health through personalized nutrition coaching. Our certified<br>
-                   nutritionists are here to guide you on your weight loss journey.</p>
-            </div>
-           <!-- Inspiring Transformations Story -->
-            <div class="flex flex-col w-[1596px] h-[530px] m-auto">
-                <div class="flex">
-                    <img src="./assets/story/transformation-story.png" alt="transformation-story" class="w-[789px] h-[530px] border-r-[18px] border-green-70 rounded-tl-[16px]">
-                    <div class="flex flex-col gap-10 justify-center w-[789px] h-[530px] bg-green-90 rounded-tr-[16px] pl-[80px]">
-                        <h3 class="w-[392px] border-b-[3px] font-semibold leading-[1] text-[28px] pt-[10px] pb-[10px] border-green-70">Inspiring Transformations Story</h3>
-                        <p class="leading-[1.5] text-grey-20 text-[18px] font-medium">Nutritionist continues to empower individuals to transform their lives through<br>
-                        personalized nutrition coaching. With an expanding client base and a growing<br>
-                        team of experts, we remain committed to our goal of helping people lose<br>
-                        weight, improve their health, and lead happier, more fulfilling lives. Our journey<br>
-                        of inspiring transformations continues, one client at a time.</p>
-                        <span class="leading-[1.5] font-semibold text-grey-20 text-[18px]">July 1, 2025</span>
-                    </div>
-                </div>
-            </div>
-           <!-- Recognition and Accolades Story -->
-            <div class="flex flex-col w-[1596px] h-[530px] m-auto">
-                <div class="flex">
-                    <div class="flex flex-col gap-10 justify-center w-[789px] h-[530px] bg-green-90 pr-[80px] text-right border-green-70 border-r-[18px]">
-                        <h3 class="w-[411px] border-b-[3px] font-semibold leading-[1] text-[28px] pt-[10px] pb-[10px] border-green-70 ml-auto">Recognition and Accolades Story</h3>
-                        <p class="leading-[1.5] text-grey-20 text-[18px] font-medium">Nutritionist received industry recognition for its excellence in personalized<br>
-                        nutrition coaching. Our innovative approach and dedication to client success<br>
-                        earned us accolades and solidified our position as a leading provider in the<br>
-                        field.</p>
-                        <span class="leading-[1.5] font-semibold text-grey-20 text-[18px]">March 10, 2023</span>
-                    </div>
-                    <img src="./assets/story/recognition-story.png" alt="recognition-story" class="w-[789px] h-[530px]">
-                </div>
-            </div>
-            <!-- Continued Growth Story -->
-            <div class="flex flex-col w-[1596px] h-[530px] m-auto">
-                <div class="flex">
-                    <img src="./assets/story/growth-story.png" alt="growth-story" class="w-[789px] h-[530px] border-r-[18px] border-green-70">
-                    <div class="flex flex-col gap-10 justify-center w-[789px] h-[530px] bg-green-90 pl-[80px]">
-                        <h3 class="w-[392px] border-b-[3px] font-semibold leading-[1] text-[28px] pt-[10px] pb-[10px] border-green-70">Continued Growth Story</h3>
-                        <p class="leading-[1.5] text-grey-20 text-[18px] font-medium">Nutritionist celebrated serving over 5,000 clients, a testament to our<br>
-                        commitment to helping individuals achieve their health and weight loss goals.<br>
-                        This milestone highlighted the positive impact we have made on the lives of<br>
-                        thousands of people.</p>
-                        <span class="leading-[1.5] font-semibold text-grey-20 text-[18px]">November 2, 2021</span>
-                    </div>
-                </div>
-            </div>
-            <!-- Collaborating for Success Story -->
-            <div class="flex flex-col w-[1596px] h-[530px] m-auto">
-                <div class="flex">
-                    <div class="flex flex-col gap-10 justify-center w-[789px] h-[530px] bg-green-90 pr-[80px] text-right border-green-70 border-r-[18px]">
-                        <h3 class="w-[411px] border-b-[3px] font-semibold leading-[1] text-[28px] pt-[10px] pb-[10px] border-green-70 ml-auto">Collaborating for Success Story</h3>
-                        <p class="leading-[1.5] text-grey-20 text-[18px] font-medium">Nutritionist established partnerships with renowned health professionals,<br>
-                        including nutritionists, dietitians, and wellness experts. These collaborations<br>
-                        allowed us to incorporate diverse perspectives and expertise, ensuring the<br>
-                        highest level of guidance for our clients.</p>
-                        <span class="leading-[1.5] font-semibold text-grey-20 text-[18px]">July 15, 2019</span>
-                    </div>
-                    <img src="./assets/story/success-story.png" alt="success-story" class="w-[789px] h-[530px]">
-                </div>
-            </div>
-            <!-- Enhanced Support Story -->
-            <div class="flex flex-col w-[1596px] h-[530px] m-auto">
-                <div class="flex">
-                    <img src="./assets/story/support-story.png" alt="support-story" class="w-[789px] h-[530px] border-r-[18px] border-green-70">
-                    <div class="flex flex-col gap-10 justify-center w-[789px] h-[530px] bg-green-90 pl-[80px]">
-                        <h3 class="w-[392px] border-b-[3px] font-semibold leading-[1] text-[28px] pt-[10px] pb-[10px] border-green-70">Enhanced Support Story</h3>
-                        <p class="leading-[1.5] text-grey-20 text-[18px] font-medium">In response to the growing demand for personalized nutrition coaching,<br>
-                        Nutritionist expanded its team of qualified nutritionists and dietitians. This<br>
-                        milestone enabled us to provide even more individualized care and support to<br>
-                        our clients.    
-                        </p>
-                        <span class="leading-[1.5] font-semibold text-grey-20 text-[18px]">April 1, 2018</span>
-                    </div>
-                </div>
-            </div>
-            <!-- Innovating for Clients Story -->
-            <div class="flex flex-col w-[1596px] h-[530px] m-auto">
-                <div class="flex">
-                    <div class="flex flex-col gap-10 justify-center w-[789px] h-[530px] bg-green-90 pr-[80px] text-right border-green-70 border-r-[18px]">
-                        <h3 class="w-[411px] border-b-[3px] font-semibold leading-[1] text-[28px] pt-[10px] pb-[10px] border-green-70 ml-auto">Innovating for Clients Story</h3>
-                        <p class="leading-[1.5] text-grey-20 text-[18px] font-medium">Nutritionist introduced a mobile app, revolutionizing the way clients engage<br>
-                        with their personalized nutrition plans. The app allowed for easy tracking of<br>
-                        progress, access to resources, and seamless communication with their<br>
-                        dedicated nutrition coaches.
-                        </p>
-                        <span class="leading-[1.5] font-semibold text-grey-20 text-[18px]">January 20, 2017</span>
-                    </div>
-                    <img src="./assets/story/client-story.png" alt="client-story" class="w-[789px] h-[530px]">
-                </div>
-            </div>
-            <!-- Celebrating Success Stories -->
-            <div class="flex flex-col w-[1596px] h-[530px] m-auto">
-                <div class="flex">
-                    <img src="./assets/story/success-story.png" alt="success-story" class="w-[789px] h-[530px] border-r-[18px] border-green-70">
-                    <div class="flex flex-col gap-10 justify-center w-[789px] h-[530px] bg-green-90 pl-[80px]">
-                        <h3 class="w-[392px] border-b-[3px] font-semibold leading-[1] text-[28px] pt-[10px] pb-[10px] border-green-70">Celebrating Success Stories</h3>
-                        <p class="leading-[1.5] text-grey-20 text-[18px] font-medium">Nutritionist celebrated its 500th client success story. These stories showcased<br>
-                        the positive impact of personalized nutrition coaching on individuals' lives,<br>
-                        further motivating our team to continue providing exceptional services.
-                        </p>
-                        <span class="leading-[1.5] font-semibold text-grey-20 text-[18px]">September 5, 2015</span>
-                    </div>
-                </div>
-            </div>
-            <!-- Expanding Reach Story -->
-            <div class="flex flex-col w-[1596px] h-[530px] m-auto">
-                <div class="flex">
-                    <div class="flex flex-col gap-10 justify-center w-[789px] h-[530px] bg-green-90 pr-[80px] text-right border-green-70 border-r-[18px]">
-                        <h3 class="w-[411px] border-b-[3px] font-semibold leading-[1] text-[28px] pt-[10px] pb-[10px] border-green-70 ml-auto">Expanding Reach Story</h3>
-                        <p class="leading-[1.5] text-grey-20 text-[18px] font-medium">Nutritionist expanded its services by launching an online platform, allowing<br>
-                        individuals from all over the world to access personalized nutrition plans and<br>
-                        expert guidance. This milestone brought convenience and accessibility to our<br>
-                        growing client base.
-                        </p>
-                        <span class="leading-[1.5] font-semibold text-grey-20 text-[18px]">June 10, 2014</span>
-                    </div>
-                    <img src="./assets/story/reach-story.png" alt="reach-story" class="w-[789px] h-[530px]">
-                </div>
-            </div>
-            <!-- Research and Expertise Story -->
-            <div class="flex flex-col w-[1596px] h-[530px] m-auto">
-                <div class="flex">
-                    <img src="./assets/story/expertise-story.png" alt="expertise-story" class="w-[789px] h-[530px] border-r-[18px] border-green-70">
-                    <div class="flex flex-col gap-10 justify-center w-[789px] h-[530px] bg-green-90 pl-[80px]">
-                        <h3 class="w-[392px] border-b-[3px] font-semibold leading-[1] text-[28px] pt-[10px] pb-[10px] border-green-70">Research and Expertise Story</h3>
-                        <p class="leading-[1.5] text-grey-20 text-[18px] font-medium">After extensive research and collaborating with nutrition experts, Sarah<br>
-                        Mitchell and her team developed a comprehensive program rooted in scientific<br>
-                        knowledge and evidence-based strategies. This milestone marked the<br>
-                        establishment of Nutritionist as a trusted source of personalized nutrition<br>
-                        coaching.
-                        </p>
-                        <span class="leading-[1.5] font-semibold text-grey-20 text-[18px]">March 15, 2012</span>
-                    </div>
-                </div>
-            </div>
-            <!-- The Inception Story -->
-            <div class="flex flex-col w-[1596px] h-[530px] m-auto">
-                <div class="flex">
-                    <div class="flex flex-col gap-10 justify-center w-[789px] h-[530px] bg-green-90 pr-[80px] text-right border-green-70 border-r-[18px] rounded-bl-[16px]">
-                        <h3 class="w-[411px] border-b-[3px] font-semibold leading-[1] text-[28px] pt-[10px] pb-[10px] border-green-70 ml-auto">The Inception Story</h3>
-                        <p class="leading-[1.5] text-grey-20 text-[18px] font-medium">On this day, Nutritionist was born with the vision of helping individuals achieve<br>
-                        their weight loss and health goals through personalized nutrition coaching. The<br>
-                        founder, Sarah Mitchell, recognized the need for a sustainable and effective<br>
-                        approach to healthy living, and thus began the journey of Nutritionist.
-                        </p>
-                        <span class="leading-[1.5] font-semibold text-grey-20 text-[18px]">January 1, 2010</span>
-                    </div>
-                    <img src="./assets/story/inception-story.png" alt="inception-story" class="w-[789px] h-[530px] rounded-br-[16px]">
-                </div>
-            </div>
+        <div class="flex p-[100px] h-[538px] bg-green-95 items-center m-auto flex-col gap-[50px] rounded-lg bg-green-95 border-green-85">
+          <h2 class="flex items-center font-semibold text-5xl text-grey-15 leading-[1.5]">Welcome to Nutritionist</h2>
+          <p class="flex ml-[100px] mr-[100px] h-[216px] text-center text-grey-20 leading-[1.5] font-medium text-[18px] m-auto"> Your trusted source for personalized nutrition coaching. Our mission is to help you achieve your weight loss and health goals through tailored nutrition plans and expert guidance. We understand that every individual is unique, and that's why we believe in providing personalized solutions that fit your lifestyle and preferences. With our team of qualified nutritionists and dietitians, we are dedicated to empowering you with the knowledge and tools you need to make lasting changes. Whether you want to shed those extra pounds, improve your overall well-being, or develop a healthier relationship with food, we are here to support you every step of the way At Nutritionist, we believe that healthy eating should be enjoyable and sustainable. We emphasize the importance of balanced nutrition, focusing on whole foods and mindful eating practices. Our approach is rooted in scientific research and evidence-based strategies, ensuring that you receive the most up-to-date and accurate information. Join our community of individuals committed to transforming their lives through nutrition. Take control of your health, boost your energy levels, and discover the joy of nourishing your body with wholesome foods. We are here to guide you towards a healthier, happier you. </p>
         </div>
-        <div class="mt-[150px]">
-
+      </div>
+      <div class="mt-[150px] flex items-center m-auto flex-col w-full">
+        <div class="flex m-auto mx-[162px] h-[136px] flex-col items-center gap-[10px] mb-[80px]">
+          <h2 class="flex justify-center text-grey-15 font-bold leading-[1.5] text-5xl">Our Story</h2>
+          <p class="flex text-center align-center leading-[1.5] text-[18px] text-grey-20 font-medium">Welcome to Nutritionist, your partner in achieving optimal health through personalized nutrition coaching. Our certified nutritionists are here to guide you on your weight loss journey.</p>
         </div>
-
+        <!-- Inspiring Transformations Story -->
+        <div class="flex flex-col m-auto">
+          <div class="flex">
+            <img src="./assets/story/transformation-story.png" alt="transformation-story" class="w-1/2 h-auto border-r-[18px] border-green-70 rounded-tl-[16px]">
+            <div class="flex flex-col gap-10 justify-center w-1/2 h-auto bg-green-90 rounded-tr-[16px] pl-[80px]">
+              <h3 class="w-[392px] border-b-[3px] font-semibold leading-[1] text-[28px] pt-[10px] pb-[10px] border-green-70">Inspiring Transformations Story</h3>
+              <p class="leading-[1.5] text-grey-20 text-[18px] font-medium mr-[80px]">Nutritionist continues to empower individuals to transform their lives through personalized nutrition coaching. With an expanding client base and a growing team of experts, we remain committed to our goal of helping people lose weight, improve their health, and lead happier, more fulfilling lives. Our journey of inspiring transformations continues, one client at a time.</p>
+              <span class="leading-[1.5] font-semibold text-grey-20 text-[18px]">July 1, 2025</span>
+            </div>
+          </div>
+        </div>
+        <!-- Recognition and Accolades Story -->
+        <div class="flex flex-col m-auto">
+          <div class="flex">
+            <div class="flex flex-col gap-10 justify-center w-1/2 h-auto bg-green-90 pr-[80px] text-right border-r-[18px] border-green-70">
+              <h3 class="w-[411px] border-b-[3px] font-semibold leading-[1] text-[28px] pt-[10px] pb-[10px] border-green-70 ml-auto">Recognition and Accolades Story</h3>
+              <p class="leading-[1.5] text-grey-20 text-[18px] font-medium ml-[80px]">Nutritionist received industry recognition for its excellence in personalized nutrition coaching. Our innovative approach and dedication to client success earned us accolades and solidified our position as a leading provider in the field.</p>
+              <span class="leading-[1.5] font-semibold text-grey-20 text-[18px]">March 10, 2023</span>
+            </div>
+            <img src="./assets/story/recognition-story.png" alt="recognition-story" class="w-1/2 h-auto">
+          </div>
+        </div>
+        <!-- Continued Growth Story -->
+        <div class="flex flex-col m-auto">
+          <div class="flex">
+            <img src="./assets/story/growth-story.png" alt="growth-story" class="w-1/2 h-auto border-r-[18px] border-green-70">
+            <div class="flex flex-col gap-10 justify-center w-1/2 h-auto bg-green-90 pl-[80px]">
+              <h3 class="w-[392px] border-b-[3px] font-semibold leading-[1] text-[28px] pt-[10px] pb-[10px] border-green-70">Continued Growth Story</h3>
+              <p class="leading-[1.5] text-grey-20 text-[18px] font-medium mr-[80px]">Nutritionist celebrated serving over 5,000 clients, a testament to our commitment to helping individuals achieve their health and weight loss goals. This milestone highlighted the positive impact we have made on the lives of thousands of people.</p>
+              <span class="leading-[1.5] font-semibold text-grey-20 text-[18px]">November 2, 2021</span>
+            </div>
+          </div>
+        </div>
+        <!-- Collaborating for Success Story -->
+        <div class="flex flex-col m-auto">
+          <div class="flex">
+            <div class="flex flex-col gap-10 justify-center w-1/2 h-auto bg-green-90 pr-[80px] text-right border-green-70 border-r-[18px]">
+              <h3 class="w-[411px] border-b-[3px] font-semibold leading-[1] text-[28px] pt-[10px] pb-[10px] border-green-70 ml-auto">Collaborating for Success Story</h3>
+              <p class="leading-[1.5] text-grey-20 text-[18px] font-medium ml-[80px]">Nutritionist established partnerships with renowned health professionals, including nutritionists, dietitians, and wellness experts. These collaborations allowed us to incorporate diverse perspectives and expertise, ensuring the highest level of guidance for our clients.</p>
+              <span class="leading-[1.5] font-semibold text-grey-20 text-[18px]">July 15, 2019</span>
+            </div>
+            <img src="./assets/story/success-story.png" alt="success-story" class="w-1/2 h-auto">
+          </div>
+        </div>
+        <!-- Enhanced Support Story -->
+        <div class="flex flex-col m-auto">
+          <div class="flex">
+            <img src="./assets/story/support-story.png" alt="support-story" class="w-1/2 h-auto border-r-[18px] border-green-70">
+            <div class="flex flex-col gap-10 justify-center w-1/2 h-auto bg-green-90 pl-[80px]">
+              <h3 class="w-[392px] border-b-[3px] font-semibold leading-[1] text-[28px] pt-[10px] pb-[10px] border-green-70">Enhanced Support Story</h3>
+              <p class="leading-[1.5] text-grey-20 text-[18px] font-medium mr-[80px]">In response to the growing demand for personalized nutrition coaching, Nutritionist expanded its team of qualified nutritionists and dietitians. This milestone enabled us to provide even more individualized care and support to our clients. </p>
+              <span class="leading-[1.5] font-semibold text-grey-20 text-[18px]">April 1, 2018</span>
+            </div>
+          </div>
+        </div>
+        <!-- Innovating for Clients Story -->
+        <div class="flex flex-col m-auto">
+          <div class="flex">
+            <div class="flex flex-col gap-10 justify-center w-1/2 h-auto bg-green-90 pr-[80px] text-right border-green-70 border-r-[18px]">
+              <h3 class="w-[411px] border-b-[3px] font-semibold leading-[1] text-[28px] pt-[10px] pb-[10px] border-green-70 ml-auto">Innovating for Clients Story</h3>
+              <p class="leading-[1.5] text-grey-20 text-[18px] font-medium ml-[80px]">Nutritionist introduced a mobile app, revolutionizing the way clients engage with their personalized nutrition plans. The app allowed for easy tracking of progress, access to resources, and seamless communication with their dedicated nutrition coaches. </p>
+              <span class="leading-[1.5] font-semibold text-grey-20 text-[18px]">January 20, 2017</span>
+            </div>
+            <img src="./assets/story/client-story.png" alt="client-story" class="w-1/2 h-auto">
+          </div>
+        </div>
+        <!-- Celebrating Success Stories -->
+        <div class="flex flex-col m-auto">
+          <div class="flex">
+            <img src="./assets/story/success-story.png" alt="success-story" class="w-1/2 h-auto border-r-[18px] border-green-70">
+            <div class="flex flex-col gap-10 justify-center w-1/2 h-auto bg-green-90 pl-[80px]">
+              <h3 class="w-[392px] border-b-[3px] font-semibold leading-[1] text-[28px] pt-[10px] pb-[10px] border-green-70">Celebrating Success Stories</h3>
+              <p class="leading-[1.5] text-grey-20 text-[18px] font-medium mr-[80px]">Nutritionist celebrated its 500th client success story. These stories showcased the positive impact of personalized nutrition coaching on individuals' lives, further motivating our team to continue providing exceptional services. </p>
+              <span class="leading-[1.5] font-semibold text-grey-20 text-[18px]">September 5, 2015</span>
+            </div>
+          </div>
+        </div>
+        <!-- Expanding Reach Story -->
+        <div class="flex flex-col m-auto">
+          <div class="flex">
+            <div class="flex flex-col gap-10 justify-center w-1/2 h-auto bg-green-90 pr-[80px] text-right border-green-70 border-r-[18px]">
+              <h3 class="w-[411px] border-b-[3px] font-semibold leading-[1] text-[28px] pt-[10px] pb-[10px] border-green-70 ml-auto">Expanding Reach Story</h3>
+              <p class="leading-[1.5] text-grey-20 text-[18px] font-medium ml-[80px]">Nutritionist expanded its services by launching an online platform, allowing individuals from all over the world to access personalized nutrition plans and expert guidance. This milestone brought convenience and accessibility to our growing client base. </p>
+              <span class="leading-[1.5] font-semibold text-grey-20 text-[18px]">June 10, 2014</span>
+            </div>
+            <img src="./assets/story/reach-story.png" alt="reach-story" class="w-1/2 h-auto">
+          </div>
+        </div>
+        <!-- Research and Expertise Story -->
+        <div class="flex flex-col m-auto">
+          <div class="flex">
+            <img src="./assets/story/expertise-story.png" alt="expertise-story" class="w-1/2 h-auto border-r-[18px] border-green-70">
+            <div class="flex flex-col gap-10 justify-center w-1/2 h-auto bg-green-90 pl-[80px]">
+              <h3 class="w-[392px] border-b-[3px] font-semibold leading-[1] text-[28px] pt-[10px] pb-[10px] border-green-70">Research and Expertise Story</h3>
+              <p class="leading-[1.5] text-grey-20 text-[18px] font-medium mr-[80px]">After extensive research and collaborating with nutrition experts, Sarah Mitchell and her team developed a comprehensive program rooted in scientific knowledge and evidence-based strategies. This milestone marked the establishment of Nutritionist as a trusted source of personalized nutrition coaching. </p>
+              <span class="leading-[1.5] font-semibold text-grey-20 text-[18px]">March 15, 2012</span>
+            </div>
+          </div>
+        </div>
+        <!-- The Inception Story -->
+        <div class="flex flex-col m-auto">
+          <div class="flex">
+            <div class="flex flex-col gap-10 justify-center w-1/2 h-auto bg-green-90 pr-[80px] text-right border-green-70 border-r-[18px] rounded-bl-[16px]">
+              <h3 class="w-[411px] border-b-[3px] font-semibold leading-[1] text-[28px] pt-[10px] pb-[10px] border-green-70 ml-auto">The Inception Story</h3>
+              <p class="leading-[1.5] text-grey-20 text-[18px] font-medium ml-[80px]">On this day, Nutritionist was born with the vision of helping individuals achieve their weight loss and health goals through personalized nutrition coaching. The founder, Sarah Mitchell, recognized the need for a sustainable and effective approach to healthy living, and thus began the journey of Nutritionist. </p>
+              <span class="leading-[1.5] font-semibold text-grey-20 text-[18px]">January 1, 2010</span>
+            </div>
+            <img src="./assets/story/inception-story.png" alt="inception-story" class="w-1/2 h-auto rounded-br-[16px]">
+          </div>
+        </div>
+      </div>
+      <div class="flex mt-[150px] m-auto justify-center">
+        <div class="flex flex-col gap-[10px]">
+          <h2 class="text-center font-semibold leading-[1.5] text-5xl">Company Achievements</h2>
+          <p class="text-center text-grey-20 leading-[1.5] text-[18px] font-medium">At Nutritionist, we take pride in our accomplishments and the positive impact we have made on the lives of our clients. Here are some of our notable achievements</p>
+        </div>
+      </div>
+      <div class="pt-[80px] flex flex-wrap gap-[30px] m-auto justify-center mb-[150px]">
+        <div class="w-[calc((100%-30px)/2)] bg-green-95 flex gap-[24px] flex-col rounded-xl border border-green-85">
+          <div class="flex items-center gap-[14px] justify-center mt-10 ml-[50px] justify-start">
+            <img src="./assets/icon/camera-macro.png" alt="icon-camera-macro" class="w-10 h-10">
+            <h4 class="font-semibold text-2xl text-grey-15">10,000+ Transformations</h4>
+          </div>
+          <p class="ml-[50px] mb-[67px] leading-[1.5] text-grey-20 text-[18px] font-medium mr-[50px]">Our personalized nutrition plans have helped thousands of individuals reach their weight loss goals and maintain a healthy lifestyle. </p>
+        </div>
+        <div class="w-[calc((100%-30px)/2)] bg-green-95 flex gap-[24px] flex-col rounded-xl border border-green-85">
+          <div class="flex items-center gap-[14px] justify-center mt-10 ml-[50px] justify-start">
+            <img src="./assets/icon/graduationcap.png" alt="icon-graduationcap" class="w-10 h-10">
+            <h4 class="font-semibold text-2xl text-grey-15">Recognition for Excellence</h4>
+          </div>
+          <p class="ml-[50px] mb-[67px] leading-[1.5] text-grey-20 text-[18px] font-medium mr-[50px]">Nutritionist has been recognized as a leading provider of personalized nutrition coaching, receiving accolades for our innovative approach and commitment to client success. </p>
+        </div>
+        <div class="w-[calc((100%-30px)/2)] bg-green-95 flex gap-[24px] flex-col rounded-xl border border-green-85">
+          <div class="flex items-center gap-[14px] justify-center mt-10 ml-[50px] justify-start">
+            <img src="./assets/icon/fork-knife.png" alt="icon-fork-knife" class="w-10 h-10">
+            <h4 class="font-semibold text-2xl text-grey-15">Positive Client Reviews</h4>
+          </div>
+          <p class="ml-[50px] mb-[67px] leading-[1.5] text-grey-20 text-[18px] font-medium mr-[50px]">We have received numerous testimonials from satisfied clients who have experienced significant improvements in their health, weight, and overall well-being through our coaching program. </p>
+        </div>
+        <div class="w-[calc((100%-30px)/2)] bg-green-95 flex gap-[24px] flex-col rounded-xl border border-green-85">
+          <div class="flex items-center gap-[14px] justify-center mt-10 ml-[50px] justify-start">
+            <img src="./assets/icon/wallet-pass.png" alt="icon-wallet-pass" class="w-10 h-10">
+            <h4 class="font-semibold text-2xl text-grey-15">Collaborate With Top Health Experts.</h4>
+          </div>
+          <p class="ml-[50px] mb-[67px] leading-[1.5] text-grey-20 text-[18px] font-medium">Our personalized nutrition plans have helped thousands of individuals reach their weight loss goals and maintain a healthy lifestyle. </p>
+        </div>
+      </div>
+      <div class="h-[279px] bg-green-95 flex justify-center m-auto rounded-xl overflow-hidden relative border border-green-85">
+        <img src="./assets/abstract/path.png" class="flex w-56 h-36 scale-x-[-1] absolute top-[-25px] left-[-50px] z-10">
+        <div class="flex gap-[150px] justify-center items-center m-auto items-center">
+          <div class="flex flex-col z-100 gap-[14px] ml-20 justify-center">
+            <h3 class="font-semibold text-2xl text-grey-15 leading-[1.5]">We Are Proud of Our Achievements</h3>
+            <p class="font-medium">But our ultimate satisfaction comes from seeing our clients achieve their goals and live healthier, happier lives. Join Nutritionist today and embark on your own transformative journey towards optimal health and well-being.</p>
+          </div>
+          <input type="button" class="bg-green-70 rounded-lg m-20 px-6 py-[18px] cursor-pointer font-semibold leading-[1.5] text-grey-15 text-[18px] whitespace-nowrap transition-all duration-800 ease-in-out hover:text-absolute-white hover:bg-dark-green-25" value="Book a Demo"></input>
+        </div>
+        <img src="./assets/abstract/petals.png" class="flex w-41 h-41 absolute bottom-[-70px] right-[-25px] z-10">
+      </div>
     </main>
-</body>
+    <footer class="h-[300px] bg-dark-green-15 mt-[150px] flex flex-col w-full items-center gap-[50px]">
+      <div class="w-full flex justify-between px-[132px] pt-[50px]">
+        <img src="./assets/logo/desktop_logo.png" alt="logo" class="w-[195px] h-[45px]">
+        <div class="flex items-center justify-center gap-[20px]">
+          <ul class="flex list-none gap-[26px]">
+            <li class="font-semibold text-lg leading-[1.5] text-absolute-white cursor-pointer transition-all duration-800 ease-in-out hover:text-green-70 hover:font-bold">Home</li>
+            <li class="font-semibold text-lg leading-[1.5] text-absolute-white cursor-pointer transition-all duration-800 ease-in-out hover:text-green-70 hover:font-bold">About</li>
+            <li class="font-semibold text-lg leading-[1.5] text-absolute-white cursor-pointer transition-all duration-800 ease-in-out hover:text-green-70 hover:font-bold">Team</li>
+            <li class="font-semibold text-lg leading-[1.5] text-absolute-white cursor-pointer transition-all duration-800 ease-in-out hover:text-green-70 hover:font-bold">Process</li>
+            <li class="font-semibold text-lg leading-[1.5] text-absolute-white cursor-pointer transition-all duration-800 ease-in-out hover:text-green-70 hover:font-bold">Pricing</li>
+            <li class="font-semibold text-lg leading-[1.5] text-absolute-white cursor-pointer transition-all duration-800 ease-in-out hover:text-green-70 hover:font-bold">Blog</li>
+          </ul>
+        </div>
+        <div class="flex gap-5 items-center justify-center">
+          <span class="font-semibold text-lg leading-[1.5] text-absolute-white">Got To Top</span>
+          <button class="rounded-[50%] bg-dark-green-20 p-[14px] group hover:bg-absolute-white cursor-pointer transition-all duration-800 ease-in-out">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="transition-all duration-800 ease-in-out group-hover:text-absolute-black text-absolute-white size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!--  -->
+      <div class="w-full px-[132px]">
+        <div class="flex bg-dark-green-20 rounded-lg border border-dark-green-25 items-center justify-between pl-5">
+          <div class="flex gap-5 py-[16px]">
+            <div class="flex gap-[6px] p-[14px] border border-dark-green-25 rounded-md cursor-pointer group hover:bg-absolute-white">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-green-70 group-hover:text-absolute-black">
+                <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
+                <path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
+              </svg>
+              <span class="font-medium leading-[1.5] text-lg text-absolute-white group-hover:text-absolute-black transition-all duration-800 ease-in-out">hello@squareup.com</span>
+            </div>
+            <div class="flex gap-[6px] p-[14px] border border-dark-green-25 rounded-md cursor-pointer group hover:bg-absolute-white transition-all duration-800 ease-in-out">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-green-70 group-hover:text-absolute-black transition-all duration-800 ease-in-out">
+                <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd" />
+              </svg>
+              <span class="font-medium leading-[1.5] text-lg text-absolute-white group-hover:text-absolute-black">+91 91813 23 2309</span>
+            </div>
+            <div class="flex gap-[6px] p-[14px] border border-dark-green-25 rounded-md cursor-pointer group hover:bg-absolute-white transition-all duration-800 ease-in-out">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-green-70 group-hover:text-absolute-black transition-all duration-800 ease-in-out">
+                <path fill-rule="evenodd" d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" clip-rule="evenodd" />
+              </svg>
+              <span class="font-medium leading-[1.5] text-lg text-absolute-white group-hover:text-absolute-black transition-all duration-800 ease-in-out">Somewhere in the World</span>
+            </div>
+          </div>
+          <div class="pr-[30px]">
+            <span class="font-regular leading-[1.5] text-lg text-absolute-white">© 2023 Nutritionist. All rights reserved.</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
