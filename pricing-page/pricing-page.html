@@ -22,7 +22,7 @@
       <!-- banner -->
       <div class="py-3.5 border-b border-b-solid border-b-[#2C5446]">
         <div
-          class="flex relative container mx-auto py-2.75 justify-center items-center bg-[#234338] border border-solid border-[#2C5446]"
+          class="flex relative 2xl:w-399 mx-auto py-2.75 justify-center items-center bg-[#234338] border border-solid border-[#2C5446]"
         >
           <!-- left -->
           <a href="#!" class="flex">
@@ -49,7 +49,7 @@
       </div>
 
       <!-- nav -->
-      <nav class="flex container mx-auto py-5 items-center justify-between">
+      <nav class="flex 2xl:w-399 mx-auto py-5 items-center justify-between">
         <a href="#"><img src="./img/Logo.png" alt="Nutritionist" /></a>
         <div class="flex items-center">
           <ul class="flex text-lg font-semibold text-[#FAFDF2]">
@@ -109,7 +109,7 @@
     <main class="main">
       <!-- introduction -->
       <section
-        class="container mx-auto bg-[#F6FBE9] relative mt-25 py-25 text-center border border-solid border-[#E5F5BD]"
+        class="2xl:w-399 mx-auto bg-[#F6FBE9] relative mt-25 py-25 text-center border border-solid border-[#E5F5BD]"
       >
         <img
           src="./img/img-decore-title.svg"
@@ -152,33 +152,21 @@
           <!-- peer-checked/monthly:bg-[#234338] -->
           <label
             for="monthly"
-            class="flex justify-center items-center cursor-pointer relative 
-            before:content-[''] before:block before:absolute before:w-full before:h-full before:top-0 before:left-0 
-            before:bg-[#234338] before:rounded-md peer-checked/yearly:before:left-full
-            after:content-['Monthly'] after:block after:absolute after:z-1 after:font-semibold after:text-lg 
-            after:text-[#4C4C4C] peer-checked/monthly:after:text-[#FFF] after:transition-all after:ease-in-out after:duration-300
-            before:transition-all before:ease-in-out before:duration-300
-            "
-            ></label
-          >
+            class="flex justify-center items-center cursor-pointer relative before:content-[''] before:block before:absolute before:w-full before:h-full before:top-0 before:left-0 before:bg-[#234338] before:rounded-md peer-checked/yearly:before:left-full after:content-['Monthly'] after:block after:absolute after:z-1 after:font-semibold after:text-lg after:text-[#4C4C4C] peer-checked/monthly:after:text-[#FFF] after:transition-all after:ease-in-out after:duration-300 before:transition-all before:ease-in-out before:duration-300"
+          ></label>
           <label
             for="yearly"
-            class="flex justify-center items-center  relative
-            after:content-['Yearly'] after:block after:absolute after:z-1 after:font-semibold after:text-lg 
-            after:text-[#4C4C4C] peer-checked/yearly:after:text-[#FFF] cursor-pointer 
-            after:ease-in-out after:duration-300
-            before:transition-all before:ease-in-out before:duration-300"
-            ></label
-          >
+            class="flex justify-center items-center relative after:content-['Yearly'] after:block after:absolute after:z-1 after:font-semibold after:text-lg after:text-[#4C4C4C] peer-checked/yearly:after:text-[#FFF] cursor-pointer after:ease-in-out after:duration-300 before:transition-all before:ease-in-out before:duration-300"
+          ></label>
         </div>
         <span
           class="block mt-3.5 font-medium text-center text-lg text-[#4C4C4D]"
           >Save 50% on Yearly</span
         >
 
-        <!-- plans -->
+        <!-- plans content -->
         <div
-          class="container mt-12.5 mx-auto grid grid-cols-3 items-start gap-7.5"
+          class="2xl:w-399 mt-12.5 mx-auto grid grid-cols-3 items-start gap-7.5"
         >
           <!-- Basic plan -->
           <div
@@ -352,6 +340,302 @@
             </button>
           </div>
         </div>
+      </section>
+
+      <!-- Compare the plans -->
+      <section
+        class="grid grid-cols-4 2xl:w-399 mx-auto mt-37.5 p-12.5 bg-[#F6FBE9] border border-solid border-[#E5F5BD] rounded-xl"
+      >
+        <!-- col-1 -->
+        <ul class="border-r border-r-solid border-r-[#DCF1A7] py-7.5">
+          <li class="pr-7.5">
+            <span
+              class="flex items-center bg-[#234338] rounded-lg font-medium text-[#fff] text-[1.375rem] px-7.5 h-18.25"
+              >Features</span
+            >
+          </li>
+          <li
+            class="px-7.5 pt-15 pb-12.5 font-medium text-xl text-[#262626] border-b border-b-solid border-b-[#DCF1A7]"
+          >
+            Personalized Nutrition Plan
+          </li>
+          <li
+            class="px-7.5 py-12.5 font-medium text-xl text-[#262626] border-b border-b-solid border-b-[#DCF1A7]"
+          >
+            Mobile App Access
+          </li>
+          <li
+            class="px-7.5 py-12.5 font-medium text-xl text-[#262626] border-b border-b-solid border-b-[#DCF1A7]"
+          >
+            Email Support
+          </li>
+          <li
+            class="px-7.5 py-12.5 font-medium text-xl text-[#262626] border-b border-b-solid border-b-[#DCF1A7]"
+          >
+            One -on One Video Consultations
+          </li>
+          <li
+            class="px-7.5 py-12.5 font-medium text-xl text-[#262626] border-b border-b-solid border-b-[#DCF1A7]"
+          >
+            Recipe Recommendations and Meal Planning
+          </li>
+          <li
+            class="px-7.5 py-12.5 font-medium text-xl text-[#262626] border-b border-b-solid border-b-[#DCF1A7]"
+          >
+            Priority Support
+          </li>
+          <li
+            class="px-7.5 py-12.5 font-medium text-xl text-[#262626] border-b border-b-solid border-b-[#DCF1A7]"
+          >
+            Educational Resources and Guides
+          </li>
+          <li
+            class="px-7.5 py-12.5 font-medium text-xl text-[#262626] border-b border-b-solid border-b-[#DCF1A7]"
+          >
+            Advanced Progress Tracking Tools
+          </li>
+          <li
+            class="px-7.5 py-12.5 font-medium text-xl text-[#262626] border-b border-b-solid border-b-[#DCF1A7]"
+          >
+            Customized Meal Plans and Recipe Suggestions
+          </li>
+          <li
+            class="px-7.5 py-12.5 font-medium text-xl text-[#262626]"
+          >
+            Phone Support
+          </li>
+        </ul>
+
+        <!-- col-2 -->
+        <ul class="border-r border-r-solid border-r-[#DCF1A7] py-7.5">
+          <li class="px-7.5">
+            <span class="flex items-center justify-center bg-[#234338] rounded-lg font-medium text-[#fff] text-[1.375rem] px-7.5 h-18.25">Free Plan</span>
+          </li>
+          <li class="pt-15 pb-12.5 flex items-center justify-center">
+            <div
+              class="bg-[#CBEA7B] w-10 h-10 flex items-center justify-center rounded-lg"
+            >
+              <img src="./img/icon-check.svg" alt="" />
+            </div>
+          </li>
+          <li class="flex items-center justify-center py-12.5 border-b border-b-solid border-b-[#DCF1A7]">
+            <div
+              class="bg-[#CBEA7B] w-10 h-10 flex items-center justify-center rounded-lg"
+            >
+              <img src="./img/icon-check.svg" alt="" />
+            </div>
+          </li>
+          <li class="flex items-center justify-center py-12.5 border-b border-b-solid border-b-[#DCF1A7]">
+            <div
+              class="bg-[#CBEA7B] w-10 h-10 flex items-center justify-center rounded-lg"
+            >
+              <img src="./img/icon-check.svg" alt="" />
+            </div>
+          </li>
+          <li class="flex items-center justify-center py-12.5 border-b border-b-solid border-b-[#DCF1A7]">
+            <div
+              class="bg-[#EEF8D3] w-10 h-10 flex items-center justify-center rounded-lg"
+            >
+              <img src="./img/icon-close.svg" alt="" />
+            </div>
+          </li>
+          <li class="flex items-center justify-center py-12.5 border-b border-b-solid border-b-[#DCF1A7]">
+            <div
+              class="bg-[#EEF8D3] w-10 h-10 flex items-center justify-center rounded-lg"
+            >
+              <img src="./img/icon-close.svg" alt="" />
+            </div>
+          </li>
+          <li class="flex items-center justify-center py-12.5 border-b border-b-solid border-b-[#DCF1A7]">
+            <div
+              class="bg-[#EEF8D3] w-10 h-10 flex items-center justify-center rounded-lg"
+            >
+              <img src="./img/icon-close.svg" alt="" />
+            </div>
+          </li>
+          <li class="flex items-center justify-center py-12.5 border-b border-b-solid border-b-[#DCF1A7]">
+            <div
+              class="bg-[#EEF8D3] w-10 h-10 flex items-center justify-center rounded-lg"
+            >
+              <img src="./img/icon-close.svg" alt="" />
+            </div>
+          </li>
+          <li class="flex items-center justify-center py-12.5 border-b border-b-solid border-b-[#DCF1A7]">
+            <div
+              class="bg-[#EEF8D3] w-10 h-10 flex items-center justify-center rounded-lg"
+            >
+              <img src="./img/icon-close.svg" alt="" />
+            </div>
+          </li>
+          <li class="flex items-center justify-center py-12.5 border-b border-b-solid border-b-[#DCF1A7]">
+            <div
+              class="bg-[#EEF8D3] w-10 h-10 flex items-center justify-center rounded-lg"
+            >
+              <img src="./img/icon-close.svg" alt="" />
+            </div>
+          </li>
+          <li class="flex items-center justify-center py-12.5 border-b border-b-solid border-b-[#DCF1A7]">
+            <div
+              class="bg-[#EEF8D3] w-10 h-10 flex items-center justify-center rounded-lg"
+            >
+              <img src="./img/icon-close.svg" alt="" />
+            </div>
+          </li>
+        </ul>
+
+        <!-- col-3 -->
+        <ul class="border-r border-r-solid border-r-[#DCF1A7] py-7.5">
+          <li class="px-7.5">
+            <span class="flex items-center justify-center bg-[#234338] rounded-lg font-medium text-[#fff] text-[1.375rem] px-7.5 h-18.25">Free Plan</span>
+          </li>
+          <li class="pt-15 pb-12.5 flex items-center justify-center">
+            <div
+              class="bg-[#CBEA7B] w-10 h-10 flex items-center justify-center rounded-lg"
+            >
+              <img src="./img/icon-check.svg" alt="" />
+            </div>
+          </li>
+          <li class="flex items-center justify-center py-12.5 border-b border-b-solid border-b-[#DCF1A7]">
+            <div
+              class="bg-[#CBEA7B] w-10 h-10 flex items-center justify-center rounded-lg"
+            >
+              <img src="./img/icon-check.svg" alt="" />
+            </div>
+          </li>
+          <li class="flex items-center justify-center py-12.5 border-b border-b-solid border-b-[#DCF1A7]">
+            <div
+              class="bg-[#CBEA7B] w-10 h-10 flex items-center justify-center rounded-lg"
+            >
+              <img src="./img/icon-check.svg" alt="" />
+            </div>
+          </li>
+          <li class="flex items-center justify-center py-12.5 border-b border-b-solid border-b-[#DCF1A7]">
+            <div
+              class="bg-[#EEF8D3] w-10 h-10 flex items-center justify-center rounded-lg"
+            >
+              <img src="./img/icon-close.svg" alt="" />
+            </div>
+          </li>
+          <li class="flex items-center justify-center py-12.5 border-b border-b-solid border-b-[#DCF1A7]">
+            <div
+              class="bg-[#EEF8D3] w-10 h-10 flex items-center justify-center rounded-lg"
+            >
+              <img src="./img/icon-close.svg" alt="" />
+            </div>
+          </li>
+          <li class="flex items-center justify-center py-12.5 border-b border-b-solid border-b-[#DCF1A7]">
+            <div
+              class="bg-[#EEF8D3] w-10 h-10 flex items-center justify-center rounded-lg"
+            >
+              <img src="./img/icon-close.svg" alt="" />
+            </div>
+          </li>
+          <li class="flex items-center justify-center py-12.5 border-b border-b-solid border-b-[#DCF1A7]">
+            <div
+              class="bg-[#EEF8D3] w-10 h-10 flex items-center justify-center rounded-lg"
+            >
+              <img src="./img/icon-close.svg" alt="" />
+            </div>
+          </li>
+          <li class="flex items-center justify-center py-12.5 border-b border-b-solid border-b-[#DCF1A7]">
+            <div
+              class="bg-[#EEF8D3] w-10 h-10 flex items-center justify-center rounded-lg"
+            >
+              <img src="./img/icon-close.svg" alt="" />
+            </div>
+          </li>
+          <li class="flex items-center justify-center py-12.5 border-b border-b-solid border-b-[#DCF1A7]">
+            <div
+              class="bg-[#EEF8D3] w-10 h-10 flex items-center justify-center rounded-lg"
+            >
+              <img src="./img/icon-close.svg" alt="" />
+            </div>
+          </li>
+          <li class="flex items-center justify-center py-12.5 border-b border-b-solid border-b-[#DCF1A7]">
+            <div
+              class="bg-[#EEF8D3] w-10 h-10 flex items-center justify-center rounded-lg"
+            >
+              <img src="./img/icon-close.svg" alt="" />
+            </div>
+          </li>
+        </ul>
+        
+        <!-- col-4 -->
+        <ul class="py-7.5">
+          <li class="px-7.5">
+            <span class="flex items-center justify-center bg-[#234338] rounded-lg font-medium text-[#fff] text-[1.375rem] px-7.5 h-18.25">Free Plan</span>
+          </li>
+          <li class="pt-15 pb-12.5 flex items-center justify-center">
+            <div
+              class="bg-[#CBEA7B] w-10 h-10 flex items-center justify-center rounded-lg"
+            >
+              <img src="./img/icon-check.svg" alt="" />
+            </div>
+          </li>
+          <li class="flex items-center justify-center py-12.5 border-b border-b-solid border-b-[#DCF1A7]">
+            <div
+              class="bg-[#CBEA7B] w-10 h-10 flex items-center justify-center rounded-lg"
+            >
+              <img src="./img/icon-check.svg" alt="" />
+            </div>
+          </li>
+          <li class="flex items-center justify-center py-12.5 border-b border-b-solid border-b-[#DCF1A7]">
+            <div
+              class="bg-[#CBEA7B] w-10 h-10 flex items-center justify-center rounded-lg"
+            >
+              <img src="./img/icon-check.svg" alt="" />
+            </div>
+          </li>
+          <li class="flex items-center justify-center py-12.5 border-b border-b-solid border-b-[#DCF1A7]">
+            <div
+              class="bg-[#EEF8D3] w-10 h-10 flex items-center justify-center rounded-lg"
+            >
+              <img src="./img/icon-close.svg" alt="" />
+            </div>
+          </li>
+          <li class="flex items-center justify-center py-12.5 border-b border-b-solid border-b-[#DCF1A7]">
+            <div
+              class="bg-[#EEF8D3] w-10 h-10 flex items-center justify-center rounded-lg"
+            >
+              <img src="./img/icon-close.svg" alt="" />
+            </div>
+          </li>
+          <li class="flex items-center justify-center py-12.5 border-b border-b-solid border-b-[#DCF1A7]">
+            <div
+              class="bg-[#EEF8D3] w-10 h-10 flex items-center justify-center rounded-lg"
+            >
+              <img src="./img/icon-close.svg" alt="" />
+            </div>
+          </li>
+          <li class="flex items-center justify-center py-12.5 border-b border-b-solid border-b-[#DCF1A7]">
+            <div
+              class="bg-[#EEF8D3] w-10 h-10 flex items-center justify-center rounded-lg"
+            >
+              <img src="./img/icon-close.svg" alt="" />
+            </div>
+          </li>
+          <li class="flex items-center justify-center py-12.5 border-b border-b-solid border-b-[#DCF1A7]">
+            <div
+              class="bg-[#EEF8D3] w-10 h-10 flex items-center justify-center rounded-lg"
+            >
+              <img src="./img/icon-close.svg" alt="" />
+            </div>
+          </li>
+          <li class="flex items-center justify-center py-12.5 border-b border-b-solid border-b-[#DCF1A7]">
+            <div
+              class="bg-[#EEF8D3] w-10 h-10 flex items-center justify-center rounded-lg"
+            >
+              <img src="./img/icon-close.svg" alt="" />
+            </div>
+          </li>
+          <li class="flex items-center justify-center py-12.5 border-b border-b-solid border-b-[#DCF1A7]">
+            <div
+              class="bg-[#EEF8D3] w-10 h-10 flex items-center justify-center rounded-lg"
+            >
+              <img src="./img/icon-close.svg" alt="" />
+            </div>
+          </li>
+        </ul>
       </section>
     </main>
   </body>
