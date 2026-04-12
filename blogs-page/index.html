@@ -3,8 +3,266 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <title>Blogs Page</title>
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Tailwind -->
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     </head>
-    <body></body>
+    <body class="bg-[#FAFDF2] font-[Urbanist]">
+        <header class="w-full bg-[#1A3129] text-white">
+            <div class="w-full border-b-2 border-[#234338]">
+                <div
+                    class="relative overflow-hidden mx-auto w-full max-w-360 px-4 lg:px-20"
+                >
+                    <img
+                        src="./assets/css/img/mb-pattern-left.png"
+                        alt=""
+                        class="absolute -bottom-7 left-0 z-0 lg:hidden"
+                    />
+
+                    <img
+                        src="./assets/css/img/mb-pattern-right.png"
+                        alt=""
+                        class="absolute -bottom-12 right-0 z-0 lg:hidden"
+                    />
+                    <div
+                        class="relative z-0 flex w-full items-center justify-center overflow-hidden pt-10 pb-3.5 lg:py-[14px]"
+                    >
+                        <div
+                            class="relative flex w-full items-center justify-between gap-2 rounded-lg border border-[#2C5446] bg-[#234338] px-3 py-2 lg:z-20 lg:w-full lg:justify-center lg:gap-4 lg:overflow-hidden"
+                        >
+                            <img
+                                src="./assets/css/img/lap-pattern-left.png"
+                                alt=""
+                                class="absolute hidden lg:w-[200px] lg:block left-[40px] z-0"
+                            />
+
+                            <img
+                                src="./assets/css/img/lap-pattern-right.png"
+                                alt=""
+                                class="absolute hidden lg:w-[200px] lg:block right-[65px] z-0"
+                            />
+
+                            <img
+                                src="./assets/css/icons/icon_promo-ball.svg"
+                                alt=""
+                                class="relative z-10 shrink-0"
+                            />
+                            <span
+                                class="text-sm font-medium whitespace-nowrap text-white lg:text-base xl:text-lg"
+                            >
+                                Join Our Personalized Nutrition Demo For Free
+                            </span>
+                            <img
+                                src="./assets/css/icons/icon_arrow-right.svg"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full">
+                <div class="mx-auto w-full max-w-360 px-4 lg:px-20">
+                    <nav class="flex w-full items-center justify-between py-5">
+                        <div class="flex items-center gap-1">
+                            <a href="#">
+                                <img
+                                    src="./assets/css/img/Petals.png"
+                                    alt="logo"
+                                />
+                            </a>
+                            <a
+                                href="#"
+                                class="text-xl font-semibold text-white"
+                            >
+                                Nutritionist
+                            </a>
+                        </div>
+
+                        <div class="flex items-center gap-4 lg:gap-8">
+                            <ul class="hidden items-center gap-8 lg:flex">
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="text-sm font-medium text-white transition hover:text-[#CBEA7B]"
+                                    >
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="text-sm font-medium text-white transition hover:text-[#CBEA7B]"
+                                    >
+                                        About
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="text-sm font-medium text-white transition hover:text-[#CBEA7B]"
+                                    >
+                                        Team
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="text-sm font-medium text-white transition hover:text-[#CBEA7B]"
+                                    >
+                                        Process
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="text-sm font-medium text-white transition hover:text-[#CBEA7B]"
+                                    >
+                                        Pricing
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="text-sm font-medium text-white transition hover:text-[#CBEA7B]"
+                                    >
+                                        Blog
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <a
+                                href="#"
+                                class="transition-colors duration-300 hover:bg-[#CBEA7B]/80 hidden rounded-lg bg-[#CBEA7B] px-4 py-3 text-sm font-semibold text-[#1A3129] lg:block"
+                            >
+                                Contact Us
+                            </a>
+
+                            <label
+                                for="mobile-menu-toggle"
+                                class="flex items-center justify-center p-1 lg:hidden"
+                            >
+                                <svg
+                                    width="28"
+                                    height="22"
+                                    viewBox="0 0 26 20"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M2 2H24M2 10H24M10 18H24"
+                                        stroke="#CBEA7B"
+                                        stroke-width="2.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </label>
+                        </div>
+                    </nav>
+                    <!-- Checkbox ẩn lưu trữ trạng thái đóng/mở -->
+                    <input
+                        type="checkbox"
+                        id="mobile-menu-toggle"
+                        class="peer hidden"
+                    />
+
+                    <!-- Overlay phủ mờ -->
+                    <label
+                        for="mobile-menu-toggle"
+                        class="fixed inset-0 z-40 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 peer-checked:opacity-100 peer-checked:pointer-events-auto lg:hidden"
+                    ></label>
+
+                    <!-- Sidebar Menu: Trượt từ phải (translate-x-full -> translate-x-0) -->
+                    <div
+                        class="fixed top-0 right-0 z-50 flex h-full w-[260px] translate-x-full flex-col bg-[#1A3129] p-6 shadow-2xl transition-transform duration-300 peer-checked:translate-x-0 lg:hidden"
+                    >
+                        <!-- Nút X để đóng menu -->
+                        <div class="mb-6 flex justify-end">
+                            <label
+                                for="mobile-menu-toggle"
+                                class="flex cursor-pointer items-center justify-center p-2 text-white transition hover:text-[#CBEA7B]"
+                            >
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M18 6L6 18M6 6L18 18"
+                                        stroke="currentColor"
+                                        stroke-width="2.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </label>
+                        </div>
+
+                        <!-- Nav bar mobile  -->
+                        <div class="flex items-center flex-col gap-5">
+                            <a
+                                href="#"
+                                class="text-lg font-medium text-white transition hover:text-[#CBEA7B] p-2"
+                            >
+                                Home
+                            </a>
+                            <a
+                                href="#"
+                                class="text-lg font-medium text-white transition hover:text-[#CBEA7B] p-2"
+                            >
+                                About
+                            </a>
+                            <a
+                                href="#"
+                                class="text-lg font-medium text-white transition hover:text-[#CBEA7B] p-2"
+                            >
+                                Team
+                            </a>
+                            <a
+                                href="#"
+                                class="text-lg font-medium text-white transition hover:text-[#CBEA7B] p-2"
+                            >
+                                Process
+                            </a>
+                            <a
+                                href="#"
+                                class="text-lg font-medium text-white transition hover:text-[#CBEA7B] p-2"
+                            >
+                                Pricing
+                            </a>
+                            <a
+                                href="#"
+                                class="text-lg font-medium text-white transition hover:text-[#CBEA7B] p-2"
+                            >
+                                Blog
+                            </a>
+                            <a
+                                href="#"
+                                class="mt-4 w-full rounded-lg bg-[#CBEA7B] px-8 py-3 text-center text-base font-semibold text-[#1A3129] transition-colors duration-300 hover:bg-[#CBEA7B]/80"
+                            >
+                                Contact Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+          
+        </main>
+
+        <footer></footer>
+    </body>
 </html>
