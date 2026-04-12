@@ -337,8 +337,14 @@ a {
 }
 
 /* Blog */
+.blog {
+    margin-bottom: 150px;
+}
+
 .blog__header {
     text-align: center;
+    width: 996px;
+    margin: 0 auto;
     margin-bottom: 80px;
 }
 
@@ -347,6 +353,7 @@ a {
     font-weight: var(--font-weight-bold);
     line-height: 1.5;
     color: var(--color-grey-15);
+    margin-bottom: 10px;
 }
 
 .blog__header-desc {
@@ -354,4 +361,107 @@ a {
     font-weight: var(--font-weight-medium);
     line-height: 1.5;
     color: var(--color-grey-20);
+}
+
+.blog__cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.blog__card {
+    width: calc((100% - 30px) / 2);
+    background-color: var(--color-green-95);
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.blog__card-img {
+    width: 703px;
+    height: 428px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+    border-radius: 12px;
+}
+
+.blog__card-sub {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    font-weight: var(--font-weight-medium);
+    color: var(--color-grey-20);
+    margin-bottom: 4px;
+}
+
+.blog__card-title {
+    font-size: 2.6rem;
+    font-weight: var(--font-weight-semibold);
+    line-height: 1.5;
+    color: var(--color-grey-15);
+    margin-bottom: 30px;
+}
+
+.blog__card-desc {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    font-weight: var(--font-weight-medium);
+    color: var(--color-grey-30);
+    margin-bottom: 30px;
+}
+
+.blog__footer {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-green-97);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid var(--color-green-90);
+}
+
+.blog__footer-image {
+    margin-right: 16px;
+    overflow: hidden;
+}
+
+.blog__footer-img {
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.blog__footer-body {
+    width: 441px;
+    margin-right: 20px;
+}
+
+.blog__footer-author {
+    font-size: 2rem;
+    font-weight: var(--font-weight-semibold);
+    line-height: 1.5;
+    color: var(--color-dark-green-15);
+}
+
+.blog__footer-info {
+    font-size: 1.8rem;
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+    color: var(--color-grey-35);
+}
+
+.blog__footer-btn {
+    display: flex;
+    gap: 10px;
+}
+
+.blog__footer-cta {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: var(--color-green-95);
+    border: 1px solid var(--color-green-90);
+    cursor: pointer;
 }
