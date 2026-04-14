@@ -20,6 +20,12 @@
     />
     <!-- tailwind css -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+      .scroll-bar {
+        scrollbar-color: #cbea7b transparent;
+      }
+    </style>
   </head>
   <body class="bg-[#FAFDF2] font-['Urbanist',_sans-serif]">
     <!-- header -->
@@ -79,7 +85,10 @@
         </label>
 
         <!-- overlay -->
-        <label for="menu-toggle" class="block cursor-pointer lg:hidden opacity-0 invisible peer-checked:opacity-100 peer-checked:visible fixed top-0 left-0 w-screen h-screen z-10 bg-black/60 transition-all ease-in-out duration-300"></label>
+        <label
+          for="menu-toggle"
+          class="block cursor-pointer lg:hidden opacity-0 invisible peer-checked:opacity-100 peer-checked:visible fixed top-0 left-0 w-screen h-screen z-10 bg-black/60 transition-all ease-in-out duration-300"
+        ></label>
         <div
           class="fixed z-20 lg:static flex lg:flex-row items-center top-0 right-[-280px] md:right-[-300px] peer-checked:right-[0] transition-all ease-in-out duration-300 flex-col bg-[#1A3129] w-70 md:w-75 h-screen lg:w-auto lg:h-auto p-5 lg:p-0"
         >
@@ -440,7 +449,7 @@
 
       <!-- Compare the plans -->
       <section
-        class="w-89.5 md:w-160 lg:w-256 xl:w-320 xl:w-320 2xl:w-399 max-w-full mx-auto mt-12.5 lg:mt-25 2xl:mt-37.5 p-7.5 xl:p-12.5 bg-[#F6FBE9] border border-solid border-[#E5F5BD] rounded-xl overflow-x-auto"
+        class="w-89.5 md:w-160 lg:w-256 xl:w-320 xl:w-320 2xl:w-399 max-w-full mx-auto mt-12.5 lg:mt-25 2xl:mt-37.5 p-7.5 xl:p-12.5 bg-[#F6FBE9] border border-solid border-[#E5F5BD] rounded-xl overflow-x-auto scroll-bar"
       >
         <table class="w-full min-w-[900px] border-separate border-spacing-0">
           <thead>
