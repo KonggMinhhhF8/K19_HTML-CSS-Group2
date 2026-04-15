@@ -62,8 +62,17 @@ a {
 
 /* Header */
 .header {
+    position: relative;
     background-color: var(--color-dark-green-15);
     padding-top: 14px;
+}
+
+.header__line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-dark-green-20);
+    position: absolute;
+    top: 43.11%;
 }
 
 .container {
@@ -220,10 +229,12 @@ a {
     object-fit: cover;
     border-radius: 0 0 50px;
     margin-left: -162px;
+    flex: 1;
 }
 
 .hero__content {
     margin-left: 50px;
+    flex: 1;
 }
 
 .hero__header {
@@ -1423,9 +1434,13 @@ input[value="yearly"]:checked ~ .pricing__body .pricing__Yearly {
     }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 767px) {
     .header {
         padding-top: 40px;
+    }
+
+    .header__line {
+        top: 56%;
     }
 
     .container {
@@ -1500,6 +1515,10 @@ input[value="yearly"]:checked ~ .pricing__body .pricing__Yearly {
 
     .logo {
         width: 147px;
+    }
+
+    .navbar__wrap-cta {
+        margin-left: 0px;
     }
 
     /* Hero */
