@@ -234,7 +234,7 @@ a {
 
 .hero__content {
     margin-left: 50px;
-    flex: 1;
+    width: 47%;
 }
 
 .hero__header {
@@ -1007,7 +1007,7 @@ input[value="yearly"]:checked ~ .pricing__body .pricing__Yearly {
     }
 
     .hero__img {
-        width: 710px;
+        width: 59%;
         height: 712px;
         object-fit: cover;
         border-radius: 0 0 50px;
@@ -1016,6 +1016,7 @@ input[value="yearly"]:checked ~ .pricing__body .pricing__Yearly {
 
     .hero__content {
         margin-left: 40px;
+        width: 100%;
     }
 
     .hero__header {
@@ -1043,6 +1044,7 @@ input[value="yearly"]:checked ~ .pricing__body .pricing__Yearly {
         height: 49px;
         border-radius: 6px;
         margin-right: 14px;
+        font-size: 1.4rem;
     }
 
     .hero__btn-right {
@@ -1052,6 +1054,7 @@ input[value="yearly"]:checked ~ .pricing__body .pricing__Yearly {
         width: 123px;
         height: 49px;
         border-radius: 6px;
+        font-size: 1.4rem;
     }
     .hero__footer-customers {
         padding: 8px 6px;
@@ -1191,7 +1194,7 @@ input[value="yearly"]:checked ~ .pricing__body .pricing__Yearly {
     }
 
     .blog__footer-body {
-        width: 352px;
+        width: 65%;
         margin-right: 20px;
     }
 
@@ -1444,7 +1447,7 @@ input[value="yearly"]:checked ~ .pricing__body .pricing__Yearly {
     }
 
     .container {
-        width: 358px;
+        max-width: calc(100% - 32px);
     }
 
     .top-header__decor-1 {
@@ -1934,8 +1937,9 @@ input[value="yearly"]:checked ~ .pricing__body .pricing__Yearly {
     .top-footer {
         position: relative;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
         flex-wrap: wrap;
         margin-bottom: 30px;
         gap: 20px;
