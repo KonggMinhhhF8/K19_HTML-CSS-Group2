@@ -62,7 +62,9 @@ a {
 
 /* Header */
 .header {
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 999;
     background-color: var(--color-dark-green-15);
     padding-top: 14px;
 }
