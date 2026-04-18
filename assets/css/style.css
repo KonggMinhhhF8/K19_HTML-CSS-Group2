@@ -62,7 +62,9 @@ a {
 
 /* Header */
 .header {
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 999;
     background-color: var(--color-dark-green-15);
     padding-top: 14px;
 }
@@ -2006,15 +2008,18 @@ input[value="yearly"]:checked ~ .pricing__body .pricing__Yearly {
         flex-direction: column;
         padding: 20px;
         border-radius: 8px;
+        justify-content: center;
     }
 
     .footer__contact {
+        width: 100%;
         flex-direction: column;
         gap: 16px;
     }
 
     .footer__info {
         width: 100%;
+        justify-content: center;
         padding: 12px;
         border-radius: 4px;
         gap: 2px;
