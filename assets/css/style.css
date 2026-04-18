@@ -763,6 +763,10 @@ a {
     font-size: 1.8rem;
     line-height: 1.5;
     cursor: pointer;
+    transition:
+        background-color 0.25s ease-in-out,
+        color 0.25s ease-in-out,
+        box-shadow 0.25s ease-in-out;
 }
 
 .pricing__Yearly {
@@ -779,6 +783,10 @@ a {
     font-size: 1.8rem;
     line-height: 1.5;
     cursor: pointer;
+    transition:
+        background-color 0.25s ease-in-out,
+        color 0.25s ease-in-out,
+        box-shadow 0.25s ease-in-out;
 }
 
 input[value="yearly"]:checked ~ .pricing__body .pricing__monthly {
@@ -788,6 +796,11 @@ input[value="yearly"]:checked ~ .pricing__body .pricing__monthly {
 input[value="yearly"]:checked ~ .pricing__body .pricing__Yearly {
     color: var(--color-absolute-white);
     background-color: var(--color-dark-green-20);
+}
+
+input[value="monthly"]:checked ~ .pricing__body .pricing__monthly,
+input[value="yearly"]:checked ~ .pricing__body .pricing__Yearly {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .pricing__body-desc {
