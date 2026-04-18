@@ -1,0 +1,1226 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Blogs Page</title>
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./assets/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- Tailwind -->
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </head>
+    <body id="top" class="bg-[#FAFDF2] font-[Urbanist]">
+        <header class="w-full bg-[#1A3129] text-white">
+            <div class="w-full border-b-2 border-[#234338]">
+                <div
+                    class="relative overflow-hidden mx-auto w-full max-w-360 px-4 lg:px-20"
+                >
+                    <img
+                        src="./assets/css/img/mb-pattern-left.png"
+                        alt=""
+                        class="absolute -bottom-7 left-0 z-0 lg:hidden"
+                    />
+
+                    <img
+                        src="./assets/css/img/mb-pattern-right.png"
+                        alt=""
+                        class="absolute -bottom-12 right-0 z-0 lg:hidden"
+                    />
+                    <div
+                        class="relative z-0 flex w-full items-center justify-center overflow-hidden pt-10 pb-3.5 lg:py-[14px]"
+                    >
+                        <div
+                            class="relative flex w-full items-center justify-between gap-2 rounded-lg border border-[#2C5446] bg-[#234338] px-3 py-2 lg:z-20 lg:w-full lg:justify-center lg:gap-4 xl:gap-2.5 lg:overflow-hidden"
+                        >
+                            <img
+                                src="./assets/css/img/lap-pattern-left.png"
+                                alt=""
+                                class="absolute hidden lg:w-[200px] lg:block left-[40px] z-0"
+                            />
+
+                            <img
+                                src="./assets/css/img/lap-pattern-right.png"
+                                alt=""
+                                class="absolute hidden lg:w-[200px] lg:block right-[65px] z-0"
+                            />
+
+                            <img
+                                src="./assets/css/icons/icon_promo-ball.svg"
+                                alt=""
+                                class="relative z-10 shrink-0"
+                            />
+                            <span
+                                class="text-sm font-medium whitespace-nowrap text-white lg:text-base xl:text-lg"
+                            >
+                                Join Our Personalized Nutrition Demo For Free
+                            </span>
+                            <img
+                                src="./assets/css/icons/icon_arrow-right.svg"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full">
+                <div class="mx-auto w-full max-w-360 px-4 lg:px-20">
+                    <nav class="flex w-full items-center justify-between py-5">
+                        <div class="flex items-center gap-1">
+                            <a href="#">
+                                <img
+                                    src="./assets/css/img/Petals.png"
+                                    alt="logo"
+                                />
+                            </a>
+                            <a href="#">
+                                <img
+                                    src="./assets/css/icons/Nutritionist-header.svg"
+                                    alt=""
+                                />
+                            </a>
+                        </div>
+
+                        <div class="flex items-center gap-4 lg:gap-8">
+                            <ul class="hidden items-center gap-8 lg:flex">
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="text-sm font-medium text-white transition hover:text-[#CBEA7B]"
+                                    >
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="text-sm font-medium text-white transition hover:text-[#CBEA7B]"
+                                    >
+                                        About
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="text-sm font-medium text-white transition hover:text-[#CBEA7B]"
+                                    >
+                                        Team
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="text-sm font-medium text-white transition hover:text-[#CBEA7B]"
+                                    >
+                                        Process
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="text-sm font-medium text-white transition hover:text-[#CBEA7B]"
+                                    >
+                                        Pricing
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="text-sm font-medium text-white transition hover:text-[#CBEA7B]"
+                                    >
+                                        Blog
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <a
+                                href="#"
+                                class="transition-colors duration-300 hover:bg-[#CBEA7B]/80 hidden rounded-lg bg-[#CBEA7B] px-4 py-3 text-sm font-semibold text-[#1A3129] lg:block"
+                            >
+                                Contact Us
+                            </a>
+
+                            <label
+                                for="mobile-menu-toggle"
+                                class="flex items-center justify-center p-1 lg:hidden"
+                            >
+                                <svg
+                                    width="28"
+                                    height="22"
+                                    viewBox="0 0 26 20"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M2 2H24M2 10H24M10 18H24"
+                                        stroke="#CBEA7B"
+                                        stroke-width="2.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </label>
+                        </div>
+                    </nav>
+                    <!-- Checkbox ẩn lưu trữ trạng thái đóng/mở -->
+                    <input
+                        type="checkbox"
+                        id="mobile-menu-toggle"
+                        class="peer hidden"
+                    />
+
+                    <!-- Overlay phủ mờ -->
+                    <label
+                        for="mobile-menu-toggle"
+                        class="fixed inset-0 z-40 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 peer-checked:opacity-100 peer-checked:pointer-events-auto lg:hidden"
+                    ></label>
+
+                    <!-- Sidebar Menu: Trượt từ phải (translate-x-full -> translate-x-0) -->
+                    <div
+                        class="fixed top-0 right-0 z-50 flex h-full w-[260px] translate-x-full flex-col bg-[#1A3129] p-6 shadow-2xl transition-transform duration-300 peer-checked:translate-x-0 lg:hidden"
+                    >
+                        <!-- Nút X để đóng menu -->
+                        <div class="mb-6 flex justify-end">
+                            <label
+                                for="mobile-menu-toggle"
+                                class="flex cursor-pointer items-center justify-center p-2 text-white transition hover:text-[#CBEA7B]"
+                            >
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M18 6L6 18M6 6L18 18"
+                                        stroke="currentColor"
+                                        stroke-width="2.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </label>
+                        </div>
+
+                        <!-- Nav bar mobile  -->
+                        <div class="flex items-center flex-col gap-5">
+                            <a
+                                href="#"
+                                class="text-lg font-medium text-white transition hover:text-[#CBEA7B] p-2"
+                            >
+                                Home
+                            </a>
+                            <a
+                                href="#"
+                                class="text-lg font-medium text-white transition hover:text-[#CBEA7B] p-2"
+                            >
+                                About
+                            </a>
+                            <a
+                                href="#"
+                                class="text-lg font-medium text-white transition hover:text-[#CBEA7B] p-2"
+                            >
+                                Team
+                            </a>
+                            <a
+                                href="#"
+                                class="text-lg font-medium text-white transition hover:text-[#CBEA7B] p-2"
+                            >
+                                Process
+                            </a>
+                            <a
+                                href="#"
+                                class="text-lg font-medium text-white transition hover:text-[#CBEA7B] p-2"
+                            >
+                                Pricing
+                            </a>
+                            <a
+                                href="#"
+                                class="text-lg font-medium text-white transition hover:text-[#CBEA7B] p-2"
+                            >
+                                Blog
+                            </a>
+                            <a
+                                href="#"
+                                class="mt-4 w-full rounded-lg bg-[#CBEA7B] px-8 py-3 text-center text-base font-semibold text-[#1A3129] transition-colors duration-300 hover:bg-[#CBEA7B]/80"
+                            >
+                                Contact Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="w-full">
+            <!-- max-w-360 (Tương đương 1440px): Đảm bảo khối dừng mở rộng khi lên màn to -->
+            <div
+                class="mx-auto w-full max-w-360 px-4 py-12.5 lg:px-20 lg:pt-25 lg:pb-12.5 xl:max-w-[1596px]"
+            >
+                <!-- Gộp khối Blog sáng và khối Tab tối vào 1 Flex Column -->
+                <div class="flex w-full flex-col">
+                    <!-- 1. Phần Our Blogs (Nửa trên sáng) -->
+                    <div
+                        class="relative flex xl:max-w-360 flex-col items-center gap-6 rounded-t-[10px] border border-b-0 border-[#E5F5BD] bg-[#F6FBE9] bg-[url('./assets/css/img/bg-our-blog.png')] bg-top bg-no-repeat px-4 py-10 lg:gap-[30px] lg:px-[40px] lg:py-[50px] overflow-hidden text-center"
+                    >
+                        <!-- Lớp Gradient để làm mờ pattern ở nửa dưới tạo hiệu ứng fade out giống ảnh -->
+                        <div
+                            class="absolute inset-0 z-0 bg-gradient-to-b from-transparent via-[#F6FBE9]/70 to-[#F6FBE9]"
+                        ></div>
+
+                        <!-- Icon Container -->
+                        <div
+                            class="relative z-10 flex h-[72px] w-[72px] shrink-0 items-center justify-center rounded-xl border border-[#E5F5BD]/60 bg-gradient-to-br from-[#F6FBE9] to-[#CBEA7B]/40 shadow-sm"
+                        >
+                            <img
+                                src="./assets/css/img/img-our-blog.png"
+                                alt=""
+                            />
+                        </div>
+
+                        <!-- Content (Tiêu đề và đoạn văn) -->
+                        <div class="relative z-10 flex flex-col gap-4">
+                            <h1
+                                class="text-[28px] lg:text-[38px] xl:text-[48px] font-semibold text-[#262626]"
+                            >
+                                Our Blogs
+                            </h1>
+                            <p
+                                class="text-[14px] lg:text-[16px] xl:text-[18px] font-medium leading-[1.5] text-[#333333]"
+                            >
+                                Welcome to the Blog section of Nutritionist,
+                                your trusted source for insightful articles,
+                                tips, and expert advice on nutrition and
+                                wellness. Here, we strive to provide you with
+                                engaging and informative content that will
+                                inspire and empower you to make informed
+                                decisions about your health. Explore our blog to
+                                discover a wealth of resources that cover a wide
+                                range of topics related to nutrition, fitness,
+                                and overall well-being.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 2. Phần Tabs (Nửa dưới tối) -->
+                    <!-- Dùng Tailwind Arbitrary values để ẩn thanh cuộn ngang trên mobile, nhưng vẫn có thể vuốt ngang -->
+                    <div
+                        class="flex w-full items-center justify-start lg:justify-center xl:justify-between gap-2 overflow-x-auto rounded-b-[10px] border border-[#1A3129] bg-[#234338] p-4 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] [&_button]:cursor-pointer"
+                    >
+                        <button
+                            class="shrink-0 whitespace-nowrap rounded-lg bg-[#356554] px-5 py-3 lg:ml-[30px] text-[14px] xl:text-[16px] font-semibold text-white transition hover:bg-[#CBEA7B] hover:text-[#1A3129]"
+                        >
+                            All
+                        </button>
+                        <button
+                            class="shrink-0 whitespace-nowrap px-5 py-2.5 lg:px-3 lg:py-2 text-[14px] xl:text-[16px] font-semibold text-white/90 transition hover:text-[#CBEA7B]"
+                        >
+                            Weight Loss Tips
+                        </button>
+                        <button
+                            class="shrink-0 whitespace-nowrap px-5 py-2.5 lg:px-3 lg:py-2 text-[14px] xl:text-[16px] font-semibold text-white/90 transition hover:text-[#CBEA7B]"
+                        >
+                            Healthy Eating
+                        </button>
+                        <button
+                            class="shrink-0 whitespace-nowrap px-5 py-2.5 lg:px-3 lg:py-2 text-[14px] xl:text-[16px] font-semibold text-white/90 transition hover:text-[#CBEA7B]"
+                        >
+                            Fitness and Exercise
+                        </button>
+                        <button
+                            class="shrink-0 whitespace-nowrap px-5 py-2.5 lg:px-3 lg:py-2 text-[14px] xl:text-[16px] font-semibold text-white/90 transition hover:text-[#CBEA7B]"
+                        >
+                            Mindset and Motivation
+                        </button>
+                        <button
+                            class="shrink-0 whitespace-nowrap px-5 py-2.5 lg:px-3 lg:py-2 text-[14px] xl:text-[16px] font-semibold text-white/90 transition hover:text-[#CBEA7B]"
+                        >
+                            Recipes and Meal Planning
+                        </button>
+
+                        <div class="shrink-0 w-1"></div>
+                    </div>
+                </div>
+
+                <!-- Blog Card -->
+                <div
+                    class="mt-7.5 grid w-full grid-cols-1 lg:border lg:border-[#E5F5BD] lg:bg-[#E5F5BD] lg:rounded-[10px] lg:overflow-hidden lg:mt-12.5 lg:grid-cols-2 [&_button]:cursor-pointer"
+                >
+                    <!-- Card 1 -->
+                    <div
+                        class="flex flex-col rounded-[10px] border border-[#E5F5BD] bg-[#F6FBE9] p-7.5 lg:rounded-none lg:pt-10 lg:px-10 lg:pb-6 xl:px-12.5 xl:pt-12.5 xl:pb-7.5"
+                    >
+                        <div class="mb-7.5 lg:mb-8">
+                            <span
+                                class="inline-block border-b-[3px] border-[#CBEA7B] pb-1 text-[20px] lg:text-[22px] xl:text-[24px] font-semibold text-[#333333]"
+                            >
+                                Weight Loss Tips
+                            </span>
+                        </div>
+                        <div
+                            class="flex justify-end border-b-[1px] border-[#E5F5BD] -mx-7.5 px-7.5 lg:-mx-10 lg:px-10 xl:-mx-12.5 lg:px-12.5"
+                        >
+                            <img
+                                src="./assets/css/img/section-1.png"
+                                alt="Blog 1"
+                                class="w-65.5 lg:w-[300px] xl:w-[440px] xl:h-[228px] rounded-t-xl object-cover"
+                            />
+                        </div>
+                        <div
+                            class="mt-7.5 flex flex-col items-start gap-6 lg:mt-8 lg:flex-row lg:items-center lg:justify-between xl:mt-12.5 xl:gap-7.5"
+                        >
+                            <div
+                                class="flex flex-1 flex-col gap-2 lg:gap-4 xl:gap-2.5"
+                            >
+                                <h3
+                                    class="text-[18px] lg:text-[20px] xl:text-[24px] font-semibold leading-[1.4] text-[#1A3129]"
+                                >
+                                    10 Effective Strategies for Sustainable
+                                    Weight Loss
+                                </h3>
+                                <p
+                                    class="text-[16px] font-medium xl:text-[18px] leading-[1.6] text-[#333333]"
+                                >
+                                    Discover proven strategies for long-term
+                                    weight loss success. Learn how to create
+                                    healthy habits, set achievable goals, and
+                                    make sustainable lifestyle changes.
+                                </p>
+                            </div>
+                            <button
+                                class="shrink-0 rounded-md bg-[#CBEA7B] px-5 py-3.5 text-[14px] font-semibold text-[#1A3129] transition-colors duration-300 hover:bg-[#b8d866] xl:w-[136px] xl:h-[63px] xl:text-[18px] xl:px-6 xl:py-4.5"
+                            >
+                                Read More
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div
+                        class="flex flex-col rounded-[10px] border border-[#E5F5BD] bg-[#F6FBE9] p-7.5 lg:rounded-none lg:pt-10 lg:px-10 lg:pb-6 xl:px-12.5 xl:pt-12.5 xl:pb-7.5"
+                    >
+                        <div class="mb-7.5 lg:mb-8">
+                            <span
+                                class="inline-block border-b-[3px] border-[#CBEA7B] pb-1 text-[20px] lg:text-[22px] xl:text-[24px] font-semibold text-[#333333]"
+                            >
+                                Weight Loss Tips
+                            </span>
+                        </div>
+                        <div
+                            class="flex justify-end border-b-[1px] border-[#E5F5BD] -mx-7.5 px-7.5 lg:-mx-10 lg:px-10 xl:-mx-12.5 lg:px-12.5"
+                        >
+                            <img
+                                src="./assets/css/img/section-2.png"
+                                alt="Blog 1"
+                                class="w-65.5 lg:w-[300px] xl:w-[440px] xl:h-[228px] rounded-t-xl object-cover"
+                            />
+                        </div>
+                        <div
+                            class="mt-7.5 flex flex-col items-start gap-6 lg:mt-8 lg:flex-row lg:items-center lg:justify-between xl:mt-12.5 xl:gap-7.5"
+                        >
+                            <div
+                                class="flex flex-1 flex-col gap-2 lg:gap-4 xl:gap-2.5"
+                            >
+                                <h3
+                                    class="text-[18px] lg:text-[20px] xl:text-[24px] font-semibold leading-[1.4] text-[#1A3129]"
+                                >
+                                    The Role of Portion Control in Weight
+                                    Management
+                                </h3>
+                                <p
+                                    class="text-[16px] font-medium xl:text-[18px] leading-[1.6] text-[#333333]"
+                                >
+                                    Learn how portion control can help you
+                                    manage your weight effectively. Find
+                                    practical tips for controlling portion sizes
+                                    and avoiding overeating.
+                                </p>
+                            </div>
+                            <button
+                                class="shrink-0 rounded-md bg-[#CBEA7B] px-5 py-3.5 text-[14px] font-semibold text-[#1A3129] transition-colors duration-300 hover:bg-[#b8d866] xl:w-[136px] xl:h-[63px] xl:text-[18px] xl:px-6 xl:py-4.5"
+                            >
+                                Read More
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div
+                        class="flex flex-col rounded-[10px] border border-[#E5F5BD] bg-[#F6FBE9] p-7.5 lg:rounded-none lg:pt-10 lg:px-10 lg:pb-6 xl:px-12.5 xl:pt-12.5 xl:pb-7.5"
+                    >
+                        <div class="mb-7.5 lg:mb-8">
+                            <span
+                                class="inline-block border-b-[3px] border-[#CBEA7B] pb-1 text-[20px] lg:text-[22px] xl:text-[24px] font-semibold text-[#333333]"
+                            >
+                                Weight Loss Tips
+                            </span>
+                        </div>
+                        <div
+                            class="flex justify-end border-b-[1px] border-[#E5F5BD] -mx-7.5 px-7.5 lg:-mx-10 lg:px-10 xl:-mx-12.5 lg:px-12.5"
+                        >
+                            <img
+                                src="./assets/css/img/section-3.png"
+                                alt="Blog 1"
+                                class="w-65.5 lg:w-[300px] xl:w-[440px] xl:h-[228px] rounded-t-xl object-cover"
+                            />
+                        </div>
+                        <div
+                            class="mt-7.5 flex flex-col items-start gap-6 lg:mt-8 lg:flex-row lg:items-center lg:justify-between xl:mt-12.5 xl:gap-7.5"
+                        >
+                            <div
+                                class="flex flex-1 flex-col gap-2 lg:gap-4 xl:gap-2.5"
+                            >
+                                <h3
+                                    class="text-[18px] lg:text-[20px] xl:text-[24px] font-semibold leading-[1.4] text-[#1A3129]"
+                                >
+                                    Understanding Emotional Eating and How to
+                                    Overcome It
+                                </h3>
+                                <p
+                                    class="text-[16px] font-medium xl:text-[18px] leading-[1.6] text-[#333333]"
+                                >
+                                    Explore the connection between emotions and
+                                    eating habits. Get valuable insights on how
+                                    to identify emotional triggers and develop
+                                    healthier coping mechanisms.
+                                </p>
+                            </div>
+                            <button
+                                class="shrink-0 rounded-md bg-[#CBEA7B] px-5 py-3.5 text-[14px] font-semibold text-[#1A3129] transition-colors duration-300 hover:bg-[#b8d866] xl:w-[136px] xl:h-[63px] xl:text-[18px] xl:px-6 xl:py-4.5"
+                            >
+                                Read More
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div
+                        class="flex flex-col rounded-[10px] border border-[#E5F5BD] bg-[#F6FBE9] p-7.5 lg:rounded-none lg:pt-10 lg:px-10 lg:pb-6 xl:px-12.5 xl:pt-12.5 xl:pb-7.5"
+                    >
+                        <div class="mb-7.5 lg:mb-8">
+                            <span
+                                class="inline-block border-b-[3px] border-[#CBEA7B] pb-1 text-[20px] lg:text-[22px] xl:text-[24px] font-semibold text-[#333333]"
+                            >
+                                Weight Loss Tips
+                            </span>
+                        </div>
+                        <div
+                            class="flex justify-end border-b-[1px] border-[#E5F5BD] -mx-7.5 px-7.5 lg:-mx-10 lg:px-10 xl:-mx-12.5 lg:px-12.5"
+                        >
+                            <img
+                                src="./assets/css/img/section-4.png"
+                                alt="Blog 1"
+                                class="w-65.5 lg:w-[300px] xl:w-[440px] xl:h-[228px] rounded-t-xl object-cover"
+                            />
+                        </div>
+                        <div
+                            class="mt-7.5 flex flex-col items-start gap-6 lg:mt-8 lg:flex-row lg:items-center lg:justify-between xl:mt-12.5 xl:gap-7.5"
+                        >
+                            <div
+                                class="flex flex-1 flex-col gap-2 lg:gap-4 xl:gap-2.5"
+                            >
+                                <h3
+                                    class="text-[18px] lg:text-[20px] xl:text-[24px] font-semibold leading-[1.4] text-[#1A3129]"
+                                >
+                                    How to Stay Motivated on Your Weight Loss
+                                    Journey
+                                </h3>
+                                <p
+                                    class="text-[16px] font-medium xl:text-[18px] leading-[1.6] text-[#333333]"
+                                >
+                                    Find effective strategies to stay motivated
+                                    and overcome obstacles during your weight
+                                    loss journey. Get tips on setting realistic
+                                    goals, tracking progress, and celebrating
+                                    achievements.
+                                </p>
+                            </div>
+                            <button
+                                class="shrink-0 rounded-md bg-[#CBEA7B] px-5 py-3.5 text-[14px] font-semibold text-[#1A3129] transition-colors duration-300 hover:bg-[#b8d866] xl:w-[136px] xl:h-[63px] xl:text-[18px] xl:px-6 xl:py-4.5"
+                            >
+                                Read More
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div
+                        class="hidden lg:flex lg:flex-col rounded-[10px] border border-[#E5F5BD] bg-[#F6FBE9] p-7.5 lg:rounded-none lg:pt-10 lg:px-10 lg:pb-6 xl:px-12.5 xl:pt-12.5 xl:pb-7.5"
+                    >
+                        <div class="mb-7.5 lg:mb-8">
+                            <span
+                                class="inline-block border-b-[3px] border-[#CBEA7B] pb-1 text-[20px] lg:text-[22px] xl:text-[24px] font-semibold text-[#333333]"
+                            >
+                                Healthy Eating
+                            </span>
+                        </div>
+                        <div
+                            class="flex justify-end border-b-[1px] border-[#E5F5BD] -mx-7.5 px-7.5 lg:-mx-10 lg:px-10 xl:-mx-12.5 lg:px-12.5"
+                        >
+                            <img
+                                src="./assets/css/img/section-5.png"
+                                alt="Blog 1"
+                                class="w-65.5 lg:w-[300px] xl:w-[440px] xl:h-[228px] rounded-t-xl object-cover"
+                            />
+                        </div>
+                        <div
+                            class="mt-7.5 flex flex-col items-start gap-6 lg:mt-8 lg:flex-row lg:items-center lg:justify-between xl:mt-12.5 xl:gap-7.5"
+                        >
+                            <div
+                                class="flex flex-1 flex-col gap-2 lg:gap-4 xl:gap-2.5"
+                            >
+                                <h3
+                                    class="text-[18px] lg:text-[20px] xl:text-[24px] font-semibold leading-[1.4] text-[#1A3129]"
+                                >
+                                    The Benefits of a Plant-Based Diet for
+                                    Overall Health
+                                </h3>
+                                <p
+                                    class="text-[16px] font-medium xl:text-[18px] leading-[1.6] text-[#333333]"
+                                >
+                                    Explore the advantages of adopting a
+                                    plant-based diet. Learn about the potential
+                                    health benefits, nutrient-rich plant-based
+                                    foods, and tips for transitioning to a
+                                    plant-based lifestyle.
+                                </p>
+                            </div>
+                            <button
+                                class="shrink-0 rounded-md bg-[#CBEA7B] px-5 py-3.5 text-[14px] font-semibold text-[#1A3129] transition-colors duration-300 hover:bg-[#b8d866] xl:w-[136px] xl:h-[63px] xl:text-[18px] xl:px-6 xl:py-4.5"
+                            >
+                                Read More
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div
+                        class="hidden lg:flex lg:flex-col rounded-[10px] border border-[#E5F5BD] bg-[#F6FBE9] p-7.5 lg:rounded-none lg:pt-10 lg:px-10 lg:pb-6 xl:px-12.5 xl:pt-12.5 xl:pb-7.5"
+                    >
+                        <div class="mb-7.5 lg:mb-8">
+                            <span
+                                class="inline-block border-b-[3px] border-[#CBEA7B] pb-1 text-[20px] lg:text-[22px] xl:text-[24px] font-semibold text-[#333333]"
+                            >
+                                Healthy Eating
+                            </span>
+                        </div>
+                        <div
+                            class="flex justify-end border-b-[1px] border-[#E5F5BD] -mx-7.5 px-7.5 lg:-mx-10 lg:px-10 xl:-mx-12.5 lg:px-12.5"
+                        >
+                            <img
+                                src="./assets/css/img/section-6.png"
+                                alt="Blog 1"
+                                class="w-65.5 lg:w-[300px] xl:w-[440px] xl:h-[228px] rounded-t-xl object-cover"
+                            />
+                        </div>
+                        <div
+                            class="mt-7.5 flex flex-col items-start gap-6 lg:mt-8 lg:flex-row lg:items-center lg:justify-between xl:mt-12.5 xl:gap-7.5"
+                        >
+                            <div
+                                class="flex flex-1 flex-col gap-2 lg:gap-4 xl:gap-2.5"
+                            >
+                                <h3
+                                    class="text-[18px] lg:text-[20px] xl:text-[24px] font-semibold leading-[1.4] text-[#1A3129]"
+                                >
+                                    Understanding Macronutrients: Carbohydrates,
+                                    Proteins, and Fats
+                                </h3>
+                                <p
+                                    class="text-[16px] font-medium xl:text-[18px] leading-[1.6] text-[#333333]"
+                                >
+                                    Get a comprehensive overview of
+                                    macronutrients and their role in a balanced
+                                    diet. Discover the best sources of each
+                                    macronutrient and how to incorporate them
+                                    into your meals.
+                                </p>
+                            </div>
+                            <button
+                                class="shrink-0 rounded-md bg-[#CBEA7B] px-5 py-3.5 text-[14px] font-semibold text-[#1A3129] transition-colors duration-300 hover:bg-[#b8d866] xl:w-[136px] xl:h-[63px] xl:text-[18px] xl:px-6 xl:py-4.5"
+                            >
+                                Read More
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 7 -->
+                    <div
+                        class="hidden lg:flex lg:flex-col rounded-[10px] border border-[#E5F5BD] bg-[#F6FBE9] p-7.5 lg:rounded-none lg:pt-10 lg:px-10 lg:pb-6 xl:px-12.5 xl:pt-12.5 xl:pb-7.5"
+                    >
+                        <div class="mb-7.5 lg:mb-8">
+                            <span
+                                class="inline-block border-b-[3px] border-[#CBEA7B] pb-1 text-[20px] lg:text-[22px] xl:text-[24px] font-semibold text-[#333333]"
+                            >
+                                Fitness and Exercise
+                            </span>
+                        </div>
+                        <div
+                            class="flex justify-end border-b-[1px] border-[#E5F5BD] -mx-7.5 px-7.5 lg:-mx-10 lg:px-10 xl:-mx-12.5 lg:px-12.5"
+                        >
+                            <img
+                                src="./assets/css/img/section-7.png"
+                                alt="Blog 1"
+                                class="w-65.5 lg:w-[300px] xl:w-[440px] xl:h-[228px] rounded-t-xl object-cover"
+                            />
+                        </div>
+                        <div
+                            class="mt-7.5 flex flex-col items-start gap-6 lg:mt-8 lg:flex-row lg:items-center lg:justify-between xl:mt-12.5 xl:gap-7.5"
+                        >
+                            <div
+                                class="flex flex-1 flex-col gap-2 lg:gap-4 xl:gap-2.5"
+                            >
+                                <h3
+                                    class="text-[18px] lg:text-[20px] xl:text-[24px] font-semibold leading-[1.4] text-[#1A3129]"
+                                >
+                                    Cardio vs. Strength Training: Which Is
+                                    Better for Weight Loss?
+                                </h3>
+                                <p
+                                    class="text-[16px] font-medium xl:text-[18px] leading-[1.6] text-[#333333]"
+                                >
+                                    Explore the benefits of both cardio and
+                                    strength training exercises for weight loss.
+                                    Find out how to combine them effectively to
+                                    maximize your results.
+                                </p>
+                            </div>
+                            <button
+                                class="shrink-0 rounded-md bg-[#CBEA7B] px-5 py-3.5 text-[14px] font-semibold text-[#1A3129] transition-colors duration-300 hover:bg-[#b8d866] xl:w-[136px] xl:h-[63px] xl:text-[18px] xl:px-6 xl:py-4.5"
+                            >
+                                Read More
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 8 -->
+                    <div
+                        class="hidden lg:flex lg:flex-col rounded-[10px] border border-[#E5F5BD] bg-[#F6FBE9] p-7.5 lg:rounded-none lg:pt-10 lg:px-10 lg:pb-6 xl:px-12.5 xl:pt-12.5 xl:pb-7.5"
+                    >
+                        <div class="mb-7.5 lg:mb-8">
+                            <span
+                                class="inline-block border-b-[3px] border-[#CBEA7B] pb-1 text-[20px] lg:text-[22px] xl:text-[24px] font-semibold text-[#333333]"
+                            >
+                                Fitness and Exercise
+                            </span>
+                        </div>
+                        <div
+                            class="flex justify-end border-b-[1px] border-[#E5F5BD] -mx-7.5 px-7.5 lg:-mx-10 lg:px-10 xl:-mx-12.5 lg:px-12.5"
+                        >
+                            <img
+                                src="./assets/css/img/section-8.png"
+                                alt="Blog 1"
+                                class="w-65.5 lg:w-[300px] xl:w-[440px] xl:h-[228px] rounded-t-xl object-cover"
+                            />
+                        </div>
+                        <div
+                            class="mt-7.5 flex flex-col items-start gap-6 lg:mt-8 lg:flex-row lg:items-center lg:justify-between xl:mt-12.5 xl:gap-7.5"
+                        >
+                            <div
+                                class="flex flex-1 flex-col gap-2 lg:gap-4 xl:gap-2.5"
+                            >
+                                <h3
+                                    class="text-[18px] lg:text-[20px] xl:text-[24px] font-semibold leading-[1.4] text-[#1A3129]"
+                                >
+                                    The Benefits of a Plant-Based Diet for
+                                    Overall Health
+                                </h3>
+                                <p
+                                    class="text-[16px] font-medium xl:text-[18px] leading-[1.6] text-[#333333]"
+                                >
+                                    Explore the advantages of adopting a
+                                    plant-based diet. Learn about the potential
+                                    health benefits, nutrient-rich plant-based
+                                    foods, and tips for transitioning to a
+                                    plant-based lifestyle.
+                                </p>
+                            </div>
+                            <button
+                                class="shrink-0 rounded-md bg-[#CBEA7B] px-5 py-3.5 text-[14px] font-semibold text-[#1A3129] transition-colors duration-300 hover:bg-[#b8d866] xl:w-[136px] xl:h-[63px] xl:text-[18px] xl:px-6 xl:py-4.5"
+                            >
+                                Read More
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 9 -->
+                    <div
+                        class="hidden lg:flex lg:flex-col rounded-[10px] border border-[#E5F5BD] bg-[#F6FBE9] p-7.5 lg:rounded-none lg:pt-10 lg:px-10 lg:pb-6 xl:px-12.5 xl:pt-12.5 xl:pb-7.5"
+                    >
+                        <div class="mb-7.5 lg:mb-8">
+                            <span
+                                class="inline-block border-b-[3px] border-[#CBEA7B] pb-1 text-[20px] lg:text-[22px] xl:text-[24px] font-semibold text-[#333333]"
+                            >
+                                Mindset and Motivation
+                            </span>
+                        </div>
+                        <div
+                            class="flex justify-end border-b-[1px] border-[#E5F5BD] -mx-7.5 px-7.5 lg:-mx-10 lg:px-10 xl:-mx-12.5 lg:px-12.5"
+                        >
+                            <img
+                                src="./assets/css/img/section-9.png"
+                                alt="Blog 1"
+                                class="w-65.5 lg:w-[300px] xl:w-[440px] xl:h-[228px] rounded-t-xl object-cover"
+                            />
+                        </div>
+                        <div
+                            class="mt-7.5 flex flex-col items-start gap-6 lg:mt-8 lg:flex-row lg:items-center lg:justify-between xl:mt-12.5 xl:gap-7.5"
+                        >
+                            <div
+                                class="flex flex-1 flex-col gap-2 lg:gap-4 xl:gap-2.5"
+                            >
+                                <h3
+                                    class="text-[18px] lg:text-[20px] xl:text-[24px] font-semibold leading-[1.4] text-[#1A3129]"
+                                >
+                                    Developing a Positive Body Image and
+                                    Self-Confidence
+                                </h3>
+                                <p
+                                    class="text-[16px] font-medium xl:text-[18px] leading-[1.6] text-[#333333]"
+                                >
+                                    Explore techniques for cultivating a
+                                    positive body image and improving
+                                    self-confidence. Learn how to embrace your
+                                    body and appreciate your unique qualities.
+                                </p>
+                            </div>
+                            <button
+                                class="shrink-0 rounded-md bg-[#CBEA7B] px-5 py-3.5 text-[14px] font-semibold text-[#1A3129] transition-colors duration-300 hover:bg-[#b8d866] xl:w-[136px] xl:h-[63px] xl:text-[18px] xl:px-6 xl:py-4.5"
+                            >
+                                Read More
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 10 -->
+                    <div
+                        class="hidden lg:flex lg:flex-col rounded-[10px] border border-[#E5F5BD] bg-[#F6FBE9] p-7.5 lg:rounded-none lg:pt-10 lg:px-10 lg:pb-6 xl:px-12.5 xl:pt-12.5 xl:pb-7.5"
+                    >
+                        <div class="mb-7.5 lg:mb-8">
+                            <span
+                                class="inline-block border-b-[3px] border-[#CBEA7B] pb-1 text-[20px] lg:text-[22px] xl:text-[24px] font-semibold text-[#333333]"
+                            >
+                                Mindset and Motivation
+                            </span>
+                        </div>
+                        <div
+                            class="flex justify-end border-b-[1px] border-[#E5F5BD] -mx-7.5 px-7.5 lg:-mx-10 lg:px-10 xl:-mx-12.5 lg:px-12.5"
+                        >
+                            <img
+                                src="./assets/css/img/section-10.png"
+                                alt="Blog 1"
+                                class="w-65.5 lg:w-[300px] xl:w-[440px] xl:h-[228px] rounded-t-xl object-cover"
+                            />
+                        </div>
+                        <div
+                            class="mt-7.5 flex flex-col items-start gap-6 lg:mt-8 lg:flex-row lg:items-center lg:justify-between xl:mt-12.5 xl:gap-7.5"
+                        >
+                            <div
+                                class="flex flex-1 flex-col gap-2 lg:gap-4 xl:gap-2.5"
+                            >
+                                <h3
+                                    class="text-[18px] lg:text-[20px] xl:text-[24px] font-semibold leading-[1.4] text-[#1A3129]"
+                                >
+                                    Overcoming Self-Sabotage in Your Weight Loss
+                                    Journey
+                                </h3>
+                                <p
+                                    class="text-[16px] font-medium xl:text-[18px] leading-[1.6] text-[#333333]"
+                                >
+                                    Identify self-sabotaging behaviors and learn
+                                    strategies to overcome them. Discover how to
+                                    shift your mindset and develop healthier
+                                    habits.
+                                </p>
+                            </div>
+                            <button
+                                class="shrink-0 rounded-md bg-[#CBEA7B] px-5 py-3.5 text-[14px] font-semibold text-[#1A3129] transition-colors duration-300 hover:bg-[#b8d866] xl:w-[136px] xl:h-[63px] xl:text-[18px] xl:px-6 xl:py-4.5"
+                            >
+                                Read More
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 11 -->
+                    <div
+                        class="hidden lg:flex lg:flex-col rounded-[10px] border border-[#E5F5BD] bg-[#F6FBE9] p-7.5 lg:rounded-none lg:pt-10 lg:px-10 lg:pb-6 xl:px-12.5 xl:pt-12.5 xl:pb-7.5"
+                    >
+                        <div class="mb-7.5 lg:mb-8">
+                            <span
+                                class="inline-block border-b-[3px] border-[#CBEA7B] pb-1 text-[20px] lg:text-[22px] xl:text-[24px] font-semibold text-[#333333]"
+                            >
+                                Recipes and Meal Planning
+                            </span>
+                        </div>
+                        <div
+                            class="flex justify-end border-b-[1px] border-[#E5F5BD] -mx-7.5 px-7.5 lg:-mx-10 lg:px-10 xl:-mx-12.5 lg:px-12.5"
+                        >
+                            <img
+                                src="./assets/css/img/section-11.png"
+                                alt="Blog 1"
+                                class="w-65.5 lg:w-[300px] xl:w-[440px] xl:h-[228px] rounded-t-xl object-cover"
+                            />
+                        </div>
+                        <div
+                            class="mt-7.5 flex flex-col items-start gap-6 lg:mt-8 lg:flex-row lg:items-center lg:justify-between xl:mt-12.5 xl:gap-7.5"
+                        >
+                            <div
+                                class="flex flex-1 flex-col gap-2 lg:gap-4 xl:gap-2.5"
+                            >
+                                <h3
+                                    class="text-[18px] lg:text-[20px] xl:text-[24px] font-semibold leading-[1.4] text-[#1A3129]"
+                                >
+                                    Healthy and Flavorful Lunch Ideas for a Busy
+                                    Lifestyle
+                                </h3>
+                                <p
+                                    class="text-[16px] font-medium xl:text-[18px] leading-[1.6] text-[#333333]"
+                                >
+                                    Discover a variety of tasty and nutritious
+                                    lunch options that are perfect for those
+                                    with busy schedules. These recipes are quick
+                                    to make and packed with essential nutrients.
+                                </p>
+                            </div>
+                            <button
+                                class="shrink-0 rounded-md bg-[#CBEA7B] px-5 py-3.5 text-[14px] font-semibold text-[#1A3129] transition-colors duration-300 hover:bg-[#b8d866] xl:w-[136px] xl:h-[63px] xl:text-[18px] xl:px-6 xl:py-4.5"
+                            >
+                                Read More
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 12 -->
+                    <div
+                        class="hidden lg:flex lg:flex-col rounded-[10px] border border-[#E5F5BD] bg-[#F6FBE9] p-7.5 lg:rounded-none lg:pt-10 lg:px-10 lg:pb-6 xl:px-12.5 xl:pt-12.5 xl:pb-7.5"
+                    >
+                        <div class="mb-7.5 lg:mb-8">
+                            <span
+                                class="inline-block border-b-[3px] border-[#CBEA7B] pb-1 text-[20px] lg:text-[22px] xl:text-[24px] font-semibold text-[#333333]"
+                            >
+                                Recipes and Meal Planning
+                            </span>
+                        </div>
+                        <div
+                            class="flex justify-end border-b-[1px] border-[#E5F5BD] -mx-7.5 px-7.5 lg:-mx-10 lg:px-10 xl:-mx-12.5 lg:px-12.5"
+                        >
+                            <img
+                                src="./assets/css/img/section-12.png"
+                                alt="Blog 1"
+                                class="w-65.5 lg:w-[300px] xl:w-[440px] xl:h-[228px] rounded-t-xl object-cover"
+                            />
+                        </div>
+                        <div
+                            class="mt-7.5 flex flex-col items-start gap-6 lg:mt-8 lg:flex-row lg:items-center lg:justify-between xl:mt-12.5 xl:gap-7.5"
+                        >
+                            <div
+                                class="flex flex-1 flex-col gap-2 lg:gap-4 xl:gap-2.5"
+                            >
+                                <h3
+                                    class="text-[18px] lg:text-[20px] xl:text-[24px] font-semibold leading-[1.4] text-[#1A3129]"
+                                >
+                                    Satisfying and Nutritious Dinner Recipes for
+                                    Weight Loss
+                                </h3>
+                                <p
+                                    class="text-[16px] font-medium xl:text-[18px] leading-[1.6] text-[#333333]"
+                                >
+                                    Find a collection of flavorful dinner
+                                    recipes that are both satisfying and
+                                    supportive of your weight loss goals. These
+                                    recipes are designed to be healthy and
+                                    delicious.
+                                </p>
+                            </div>
+                            <button
+                                class="shrink-0 rounded-md bg-[#CBEA7B] px-5 py-3.5 text-[14px] font-semibold text-[#1A3129] transition-colors duration-300 hover:bg-[#b8d866] xl:w-[136px] xl:h-[63px] xl:text-[18px] xl:px-6 xl:py-4.5"
+                            >
+                                Read More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="w-full bg-[#1A3129] py-7.5 lg:pb-12 lg:pt-[60px]">
+            <div class="mx-auto w-full max-w-360 px-4 lg:px-10">
+                <!-- Top Section -->
+                <div
+                    class="flex flex-wrap items-center justify-between gap-y-5 lg:flex-nowrap lg:gap-x-12"
+                >
+                    <!-- 1. Logo (Trái) -->
+                    <div
+                        class="order-1 flex w-1/2 items-center gap-2 lg:order-none lg:w-auto shrink-0"
+                    >
+                        <!-- Inline SVG thay cho logo img để chống vỡ hình/404 nếu thiếu assets -->
+                        <img src="./assets/css/img/Petals.png" alt="logo" />
+                        <img
+                            src="./assets/css/icons/Nutritionist.svg"
+                            alt=""
+                            class="xl:hidden"
+                        />
+                        <img
+                            src="./assets/css/icons/Nutritionist-xl.svg"
+                            alt=""
+                            class="hidden xl:inline"
+                        />
+                    </div>
+
+                    <!-- 3. Navigation Links (Giữa trên Desktop, Dòng 2 trên Mobile) -->
+                    <ul
+                        class="order-3 flex w-[300px] flex-wrap gap-4 lg:order-none lg:w-auto lg:justify-center lg:gap-8"
+                    >
+                        <li>
+                            <a
+                                href="#"
+                                class="text-[14px] xl:text-[18px] font-semibold text-white transition hover:text-[#CBEA7B]"
+                                >Home</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="text-[14px] xl:text-[18px] font-semibold text-white transition hover:text-[#CBEA7B]"
+                                >About</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="text-[14px] xl:text-[18px] font-semibold text-white transition hover:text-[#CBEA7B]"
+                                >Team</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="text-[14px] xl:text-[18px] font-semibold text-white transition hover:text-[#CBEA7B]"
+                                >Process</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="text-[14px] xl:text-[18px] font-semibold text-white transition hover:text-[#CBEA7B]"
+                                >Pricing</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="text-[14px] xl:text-[18px] font-semibold text-white transition hover:text-[#CBEA7B]"
+                                >Blog</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="text-[14px] xl:text-[18px] font-semibold text-white transition hover:text-[#CBEA7B]"
+                                >Contact</a
+                            >
+                        </li>
+                    </ul>
+
+                    <!-- 2. Got To Top (Phải) -->
+                    <div
+                        class="order-2 flex w-1/2 items-center justify-end gap-3 lg:order-none lg:w-auto shrink-0"
+                    >
+                        <span
+                            class="text-[16px] xl:text-[18px] font-semibold text-white"
+                            >Got To Top</span
+                        >
+                        <a
+                            href="#top"
+                            class="flex h-[48px] w-[48px] items-center justify-center rounded-full bg-[#234338] text-white transition hover:bg-[#CBEA7B] hover:text-[#1A3129] cursor-pointer"
+                        >
+                            <svg
+                                width="10"
+                                height="12"
+                                viewBox="0 0 10 12"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M4.8 12C4.30295 12 3.9 11.5971 3.9 11.1L3.9 3.1345L1.54875 5.7238C1.20424 6.08209 0.634498 6.09326 0.276203 5.74875C-0.0820911 5.40424 -0.0932628 4.8345 0.251251 4.4762L4.15125 0.276202C4.32093 0.0997319 4.55519 7.78183e-09 4.8 0C5.04482 -7.78183e-09 5.27907 0.0997318 5.44875 0.276202L9.34875 4.4762C9.69326 4.8345 9.68209 5.40424 9.3238 5.74875C8.9655 6.09326 8.39577 6.08209 8.05125 5.7238L5.7 3.1345V11.1C5.7 11.5971 5.29706 12 4.8 12Z"
+                                    fill="white"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Bottom Section (Contact Info & Copyright) -->
+                <div
+                    class="mt-7.5 flex flex-col items-center rounded-xl border border-[#2C5446] bg-[#234338] p-5 lg:flex-row lg:justify-between lg:flex-nowrap lg:px-4 lg:py-4 xl:px-5 xl:py-4"
+                >
+                    <!-- Contact Cards -->
+                    <div
+                        class="flex w-full flex-col gap-4 lg:w-auto lg:flex-row lg:gap-2"
+                    >
+                        <!-- Email -->
+                        <a
+                            href="mailto:hello@squareup.com"
+                            class="flex items-center justify-center gap-[5px] rounded-lg border border-[#2C5446] hover:opacity-80 px-6 py-[18px] lg:justify-start lg:p-4"
+                        >
+                            <svg
+                                width="18"
+                                height="14"
+                                viewBox="0 0 18 14"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M0 4.09925V11.25C0 12.6307 1.11929 13.75 2.5 13.75H15C16.3807 13.75 17.5 12.6307 17.5 11.25V4.09925L10.0602 8.67756C9.25673 9.17203 8.24327 9.17203 7.43976 8.67756L0 4.09925Z"
+                                    fill="#CBEA7B"
+                                />
+                                <path
+                                    d="M17.5 2.63152V2.5C17.5 1.11929 16.3807 0 15 0H2.5C1.11929 0 0 1.11929 0 2.5V2.63152L8.09488 7.61299C8.49664 7.86022 9.00336 7.86022 9.40512 7.61299L17.5 2.63152Z"
+                                    fill="#CBEA7B"
+                                />
+                            </svg>
+
+                            <span
+                                class="text-[16px] xl:text-[18px] font-medium text-white"
+                                >hello@squareup.com</span
+                            >
+                        </a>
+
+                        <!-- Phone -->
+                        <a
+                            href="tel:+9191813232309"
+                            class="flex items-center justify-center gap-[5px] rounded-lg border border-[#2C5446] hover:opacity-80 px-6 py-[18px] lg:justify-start lg:p-4"
+                        >
+                            <svg
+                                width="22"
+                                height="22"
+                                viewBox="0 0 24 24"
+                                fill="#CBEA7B"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M6.62 10.79C8.06 13.62 10.38 15.93 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.06 21 2 12.94 2 3C2 2.45 2.45 2 3 2H6.5C7.05 2 7.5 2.45 7.5 3C7.5 4.25 7.7 5.45 8.07 6.57C8.18 6.92 8.1 7.31 7.82 7.59L6.62 10.79Z"
+                                />
+                            </svg>
+                            <span
+                                class="text-[16px] xl:text-[18px] whitespace-nowrap font-medium text-white"
+                                >+91 91813 23 2309</span
+                            >
+                        </a>
+
+                        <!-- Location -->
+                        <div
+                            class="min-w-[250px] flex items-center justify-center gap-[5px] rounded-lg border border-[#2C5446] px-6 py-[18px] lg:justify-start lg:px-6"
+                        >
+                            <svg
+                                width="22"
+                                height="22"
+                                viewBox="0 0 24 24"
+                                fill="#CBEA7B"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z"
+                                />
+                            </svg>
+                            <span
+                                class="text-[16px] xl:text-[18px] font-medium text-white"
+                                >Somewhere in the World</span
+                            >
+                        </div>
+                    </div>
+
+                    <!-- Copyright -->
+                    <div
+                        class="mt-5 text-center text-[14px] lg:text-[16px] xl:text-[18px] text-white lg:mt-0"
+                    >
+                        © 2023 Nutritionist. All rights reserved.
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
