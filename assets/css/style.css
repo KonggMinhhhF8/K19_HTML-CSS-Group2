@@ -557,6 +557,32 @@ a {
     cursor: pointer;
 }
 
+.blog__footer-icon--active {
+    display: none;
+}
+
+#like-toggle:checked ~ label .blog__footer-icon {
+    display: none;
+}
+
+#like-toggle:checked ~ label .blog__footer-icon--active {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.blog__footer-icon--saved {
+    display: none;
+}
+
+#save-toggle:checked ~ label .blog__footer-icon {
+    display: none;
+}
+
+#save-toggle:checked ~ label .blog__footer-icon--saved {
+    display: inline-block;
+    cursor: pointer;
+}
+
 /* Feedback */
 .feedback {
     margin-bottom: 177px;
@@ -1219,6 +1245,7 @@ input[value="yearly"]:checked ~ .pricing__body .pricing__Yearly {
     .blog__footer-icon {
         width: 20px;
         height: 20px;
+        cursor: pointer;
     }
 
     /* Feedback */
