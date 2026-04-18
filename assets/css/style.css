@@ -201,6 +201,7 @@ a {
 }
 
 .header__overlay {
+    display: none;
     opacity: 0;
     visibility: hidden;
     transition:
@@ -1526,6 +1527,7 @@ input[value="yearly"]:checked ~ .pricing__body .pricing__Yearly {
     }
 
     #menu-toggle:checked ~ .navbar .header__overlay {
+        display: block;
         position: fixed;
         top: 0;
         left: 0;
