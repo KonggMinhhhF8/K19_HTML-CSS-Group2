@@ -156,7 +156,7 @@ a {
 }
 
 .navbar__link:hover {
-    text-decoration: underline;
+    color: var(--color-green-70);
 }
 
 .navbar__wrap-cta {
