@@ -421,6 +421,7 @@ a {
 .blog__header {
     text-align: center;
     width: 996px;
+    max-width: 100%;
     margin: 0 auto;
     margin-bottom: 80px;
 }
@@ -594,6 +595,7 @@ a {
 .feedback__header {
     text-align: center;
     margin-bottom: 80px;
+    max-width: 100%;
 }
 
 .feedback__title {
@@ -715,6 +717,7 @@ a {
 .pricing__header {
     text-align: center;
     width: 996px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -1342,6 +1345,7 @@ input[value="yearly"]:checked ~ .pricing__body .pricing__Yearly {
 
     .pricing__header {
         width: 780px;
+        max-width: 100%;
     }
 
     .pricing__title {
