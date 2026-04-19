@@ -925,7 +925,7 @@ input[value="yearly"]:checked ~ .pricing__body .pricing__Yearly {
 }
 
 .footer__link:hover {
-    text-decoration: underline;
+    color: var(--color-green-70);
 }
 
 .footer__action {
