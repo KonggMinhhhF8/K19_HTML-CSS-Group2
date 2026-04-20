@@ -62,7 +62,9 @@ a {
 
 /* Header */
 .header {
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 999;
     background-color: var(--color-dark-green-15);
     padding-top: 14px;
 }
@@ -76,8 +78,7 @@ a {
 }
 
 .container {
-    width: 1596px;
-    max-width: calc(100% - 48px);
+    max-width: calc(100% - 80px);
     margin: 0 auto;
 }
 
@@ -88,7 +89,7 @@ a {
     align-items: center;
     background-color: var(--color-dark-green-20);
     width: 100%;
-    padding: 10px 20px;
+    padding: 8px 12px;
     margin-bottom: 14px;
     border: 1px solid var(--color-dark-green-25);
     border-radius: 6px;
@@ -141,7 +142,7 @@ a {
 
 .navbar__list {
     display: flex;
-    gap: 26px;
+    gap: 32px;
 }
 
 .navbar__link {
@@ -154,7 +155,7 @@ a {
 }
 
 .navbar__link:hover {
-    text-decoration: underline;
+    color: var(--color-green-70);
 }
 
 .navbar__wrap-cta {
@@ -213,6 +214,10 @@ a {
     display: none;
 }
 
+.top-header__decor-3,
+.top-header__decor-4 {
+    display: none;
+}
 /* Hero */
 .hero {
     margin-bottom: 150px;
@@ -419,6 +424,7 @@ a {
 .blog__header {
     text-align: center;
     width: 996px;
+    max-width: 100%;
     margin: 0 auto;
     margin-bottom: 80px;
 }
@@ -592,6 +598,7 @@ a {
 .feedback__header {
     text-align: center;
     margin-bottom: 80px;
+    max-width: 100%;
 }
 
 .feedback__title {
@@ -713,6 +720,7 @@ a {
 .pricing__header {
     text-align: center;
     width: 996px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -741,6 +749,7 @@ a {
     margin: 0 auto;
     padding: 10px;
     width: 233px;
+    max-width: 100%;
     height: 67px;
     border: 1px solid var(--color-green-80);
     border-radius: 8px;
@@ -761,6 +770,10 @@ a {
     font-size: 1.8rem;
     line-height: 1.5;
     cursor: pointer;
+    transition:
+        background-color 0.25s ease-in-out,
+        color 0.25s ease-in-out,
+        box-shadow 0.25s ease-in-out;
 }
 
 .pricing__Yearly {
@@ -777,6 +790,10 @@ a {
     font-size: 1.8rem;
     line-height: 1.5;
     cursor: pointer;
+    transition:
+        background-color 0.25s ease-in-out,
+        color 0.25s ease-in-out,
+        box-shadow 0.25s ease-in-out;
 }
 
 input[value="yearly"]:checked ~ .pricing__body .pricing__monthly {
@@ -786,6 +803,11 @@ input[value="yearly"]:checked ~ .pricing__body .pricing__monthly {
 input[value="yearly"]:checked ~ .pricing__body .pricing__Yearly {
     color: var(--color-absolute-white);
     background-color: var(--color-dark-green-20);
+}
+
+input[value="monthly"]:checked ~ .pricing__body .pricing__monthly,
+input[value="yearly"]:checked ~ .pricing__body .pricing__Yearly {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .pricing__body-desc {
@@ -906,7 +928,7 @@ input[value="yearly"]:checked ~ .pricing__body .pricing__Yearly {
 }
 
 .footer__link:hover {
-    text-decoration: underline;
+    color: var(--color-green-70);
 }
 
 .footer__action {
@@ -973,8 +995,7 @@ input[value="yearly"]:checked ~ .pricing__body .pricing__Yearly {
 
 @media screen and (max-width: 1440px) {
     .container {
-        width: 1280px;
-        max-width: calc(100% - 48px);
+        max-width: calc(100% - 80px);
     }
 
     .top-header__desc {
@@ -1026,6 +1047,12 @@ input[value="yearly"]:checked ~ .pricing__body .pricing__Yearly {
         width: 20px;
         height: 20px;
         margin-right: 6px;
+    }
+
+    .logo,
+    .logo__brand {
+        width: 147px;
+        height: 34px;
     }
 
     /* Hero */
@@ -1326,6 +1353,7 @@ input[value="yearly"]:checked ~ .pricing__body .pricing__Yearly {
 
     .pricing__header {
         width: 780px;
+        max-width: 100%;
     }
 
     .pricing__title {
@@ -1497,10 +1525,14 @@ input[value="yearly"]:checked ~ .pricing__body .pricing__Yearly {
         display: block;
     }
 
+    .navbar {
+        padding: 20px 0;
+    }
+
     .navbar__wrap {
         position: fixed;
         top: 0;
-        right: -300px;
+        right: -500px;
         width: 300px;
         max-width: 100%;
         height: 100%;
@@ -1513,7 +1545,11 @@ input[value="yearly"]:checked ~ .pricing__body .pricing__Yearly {
         display: flex;
         flex-direction: column;
         z-index: 1000;
-        align-items: flex-start;
+        align-items: center;
+    }
+
+    .navbar__wrap-cta {
+        width: 100%;
     }
 
     #menu-toggle:checked ~ .navbar .navbar__wrap {
@@ -1522,7 +1558,7 @@ input[value="yearly"]:checked ~ .pricing__body .pricing__Yearly {
 
     #menu-toggle:checked ~ .navbar .navbar__list {
         flex-direction: column;
-        gap: 10px;
+        gap: 20px;
         margin: 3rem 0;
     }
 
@@ -2006,15 +2042,18 @@ input[value="yearly"]:checked ~ .pricing__body .pricing__Yearly {
         flex-direction: column;
         padding: 20px;
         border-radius: 8px;
+        justify-content: center;
     }
 
     .footer__contact {
+        width: 100%;
         flex-direction: column;
         gap: 16px;
     }
 
     .footer__info {
         width: 100%;
+        justify-content: center;
         padding: 12px;
         border-radius: 4px;
         gap: 2px;
