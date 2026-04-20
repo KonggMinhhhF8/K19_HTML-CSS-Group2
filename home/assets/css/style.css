@@ -96,6 +96,12 @@ a {
     border-radius: 6px;
 }
 
+.top-header__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .ball {
     width: 24px;
     height: 24px;
