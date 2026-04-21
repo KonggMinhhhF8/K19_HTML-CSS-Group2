@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Page - Nutritionist</title>
+    <title>Team Page</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
     
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
@@ -27,48 +28,87 @@
         }
     </style>
 </head>
-<body class="bg-brand-light text-brand-text font-sans antialiased flex flex-col min-h-screen">
+<body id="top" class="bg-brand-light text-brand-text font-sans antialiased flex flex-col min-h-screen">
 
-    <header class="w-full bg-brand-dark">
-        <div class="relative w-full bg-brand-dark border-b border-brand-green overflow-hidden flex justify-center py-3 md:py-0">
-            <div class="relative w-7/8 bg-brand-dark-green border-b border-brand-green overflow-hidden flex justify-center py-3 md:py-0">
-            <div class="absolute top-0 left-0 w-[120px] md:w-[200px] xl:w-[300px] h-full bg-[url('./assets/images/backgrounds/left.png')] bg-no-repeat bg-left bg-cover opacity-80 pointer-events-none z-0"></div>
-            <div class="absolute top-0 right-0 w-[120px] md:w-[200px] xl:w-[300px] h-full bg-[url('./assets/images/backgrounds/right.png')] bg-no-repeat bg-right bg-cover opacity-80 pointer-events-none z-0"></div>
+    <header class="w-full bg-[#1A3129] text-white sticky top-0 z-50">
+        <div class="w-full border-b-2 border-[#234338]">
+            <div class="relative overflow-hidden mx-auto w-full max-w-[1596px] px-4 lg:px-20">
+                <img src="../blogs/assets/css/img/mb-pattern-left.png" alt="" class="absolute -bottom-7 left-0 z-0 lg:hidden" />
+                <img src="../blogs/assets/css/img/mb-pattern-right.png" alt="" class="absolute -bottom-12 right-0 z-0 lg:hidden" />
+                
+                <div class="relative z-0 flex w-full items-center justify-center overflow-hidden pt-10 pb-3.5 lg:py-[14px]">
+                    <div class="relative flex w-full items-center justify-between gap-2 rounded-lg border border-[#2C5446] bg-[#234338] px-3 py-2 lg:z-20 lg:w-full lg:justify-center lg:gap-4 xl:gap-2.5 lg:overflow-hidden">
+                        <img src="../blogs/assets/css/img/lap-pattern-left.png" alt="" class="absolute hidden lg:w-[200px] lg:block left-[40px] z-0" />
+                        <img src="../blogs/assets/css/img/lap-pattern-right.png" alt="" class="absolute hidden lg:w-[200px] lg:block right-[65px] z-0" />
 
-            <div class="relative z-10 w-full max-w-[1596px] mx-auto px-4 md:px-8 xl:px-[162px] md:py-3">
-                <div class="flex items-center justify-center gap-1.5 md:gap-2 text-xs sm:text-sm md:text-base text-white
-                            bg-brand-dark/90 border border-brand-green rounded-[8px] py-2 px-3 backdrop-blur-sm
-                            md:bg-transparent md:border-none md:rounded-none md:p-0 md:backdrop-blur-none">
-                    <img src="./assets/icons/banner-icon.png" alt="Icon" class="w-4 h-4 md:w-5 md:h-5 object-contain shrink-0" />
-                    <span class="font-medium text-center leading-snug">Join Our Personalized Nutrition Demo For Free</span>
-                    <img src="./assets/icons/right-arrow.png" alt="Arrow" class="w-3 h-3 md:w-4 md:h-4 object-contain shrink-0" />
+                        <img src="../blogs/assets/css/icons/icon_promo-ball.svg" alt="" class="relative z-10 shrink-0" />
+                        <span class="text-sm font-medium whitespace-nowrap text-white lg:text-base xl:text-lg">
+                            Join Our Personalized Nutrition Demo For Free
+                        </span>
+                        <img src="../blogs/assets/css/icons/icon_arrow-right.svg" alt="" />
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
 
-        <div class="w-full border-b border-brand-border-light">
-            <div class="max-w-[1596px] mx-auto px-4 md:px-8 xl:px-[162px] py-5 flex justify-between items-center">
-                <div class="flex items-center gap-2 text-white font-bold text-xl lg:text-2xl">
-                    <img src="./assets/icons/logo-icon.png" alt="Nutritionist Logo" class="w-8 h-8 md:w-[36px] md:h-[36px] object-contain" />
-                    Nutritionist
-                </div>
+        <div class="w-full">
+            <div class="mx-auto w-full max-w-[1596px] px-4 lg:px-20">
+                <nav class="flex w-full items-center justify-between py-5">
+                    
+                    <div class="flex items-center gap-1">
+                        <a href="../index.html">
+                            <img src="../blogs/assets/css/img/Petals.png" alt="logo" />
+                        </a>
+                        <a href="../index.html">
+                            <img src="../blogs/assets/css/icons/Nutritionist-header.svg" alt="" />
+                        </a>
+                    </div>
 
-                <nav class="hidden lg:flex items-center gap-6 xl:gap-10 text-white font-medium text-base xl:text-lg">
-                    <a href="#" class="hover:text-brand-primary transition">Home</a>
-                    <a href="#" class="hover:text-brand-primary transition">About</a>
-                    <a href="#" class="text-brand-primary transition font-semibold">Team</a> <a href="#" class="hover:text-brand-primary transition">Process</a>
-                    <a href="#" class="hover:text-brand-primary transition">Pricing</a>
-                    <a href="#" class="hover:text-brand-primary transition">Blog</a>
+                    <div class="flex items-center gap-4 lg:gap-8">
+                        <ul class="hidden items-center gap-8 lg:flex">
+                            <li><a href="../index.html" class="text-sm xl:text-[18px] font-medium text-white transition hover:text-[#CBEA7B]">Home</a></li>
+                            <li><a href="../about/index.html" class="text-sm xl:text-[18px] font-medium text-white transition hover:text-[#CBEA7B]">About</a></li>
+                            <li><a href="../team/index.html" class="text-sm xl:text-[18px] font-semibold text-[#CBEA7B] transition hover:text-[#CBEA7B]">Team</a></li>
+                            <li><a href="../process/index.html" class="text-sm xl:text-[18px] font-medium text-white transition hover:text-[#CBEA7B]">Process</a></li>
+                            <li><a href="../pricing/index.html" class="text-sm xl:text-[18px] font-medium text-white transition hover:text-[#CBEA7B]">Pricing</a></li>
+                            <li><a href="../blogs/index.html" class="text-sm xl:text-[18px] font-medium text-white transition hover:text-[#CBEA7B]">Blog</a></li>
+                        </ul>
+
+                        <a href="#" class="transition-colors duration-300 hover:bg-[#CBEA7B]/80 hidden rounded-lg bg-[#CBEA7B] px-4 py-3 text-sm xl:text-[18px] font-semibold text-[#1A3129] lg:block">
+                            Contact Us
+                        </a>
+
+                        <label for="mobile-menu-toggle" class="flex items-center justify-center p-1 lg:hidden cursor-pointer">
+                            <img src="./assets/icons/menu-icon.png" alt="Menu" class="w-[28px] h-[22px] object-contain " />
+                        </label>
+                    </div>
                 </nav>
 
-                <button class="hidden lg:block bg-brand-primary text-brand-text font-semibold px-5 xl:px-6 py-3 rounded-lg hover:bg-opacity-90 transition">
-                    Contact Us
-                </button>
+                <input type="checkbox" id="mobile-menu-toggle" class="peer hidden" />
 
-                <label for="mobile-menu-toggle" class="lg:hidden cursor-pointer shrink-0">
-                    <img src="./assets/icons/menu-icon.png" alt="Menu" class="w-[34px] h-[34px] object-contain" />
-                </label>
+                <label for="mobile-menu-toggle" class="fixed inset-0 z-40 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 peer-checked:opacity-100 peer-checked:pointer-events-auto lg:hidden"></label>
+
+                <div class="fixed top-0 right-0 z-50 flex h-full w-[260px] translate-x-full flex-col bg-[#1A3129] p-6 shadow-2xl transition-transform duration-300 peer-checked:translate-x-0 lg:hidden">
+                    
+                    <div class="mb-6 flex justify-end">
+                        <label for="mobile-menu-toggle" class="flex cursor-pointer items-center justify-center p-2 text-white transition hover:opacity-80">
+                            <img src="../pricing/img/icon-close.svg" alt="Close" class="w-[24px] h-[24px] object-contain " />
+                        </label>
+                    </div>
+
+                    <div class="flex items-center flex-col gap-5">
+                        <a href="../index.html" class="text-lg font-medium text-white transition hover:text-[#CBEA7B] p-2">Home</a>
+                        <a href="../about/index.html" class="text-lg font-medium text-white transition hover:text-[#CBEA7B] p-2">About</a>
+                        <a href="../team/index.html" class="text-lg font-semibold text-[#CBEA7B] transition hover:text-[#CBEA7B] p-2">Team</a>
+                        <a href="../process/index.html" class="text-lg font-medium text-white transition hover:text-[#CBEA7B] p-2">Process</a>
+                        <a href="../pricing/index.html" class="text-lg font-medium text-white transition hover:text-[#CBEA7B] p-2">Pricing</a>
+                        <a href="../blogs/index.html" class="text-lg font-medium text-white transition hover:text-[#CBEA7B] p-2">Blog</a>
+
+                        <a href="#" class="mt-4 w-full rounded-lg bg-[#CBEA7B] px-8 py-3 text-center text-base font-semibold text-[#1A3129] transition-colors duration-300 hover:bg-[#CBEA7B]/80">
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -153,7 +193,7 @@
             </div>
             
             <div class="w-full lg:w-auto relative z-10 flex justify-center lg:justify-end mt-2 lg:mt-0">
-                <button class="bg-brand-primary text-brand-text font-semibold px-6 py-4 md:px-[24px] md:py-[18px] rounded-[8px] hover:bg-opacity-90 transition w-full md:w-auto lg:w-[137px] h-[63px] flex items-center justify-center whitespace-nowrap">
+                <button class="bg-brand-primary text-brand-text font-semibold px-6 py-4 md:px-[24px] md:py-[18px] rounded-[8px] hover:bg-[#CBEA7B]/80 cursor-pointer transition w-full md:w-auto lg:w-[137px] h-[63px] flex items-center justify-center whitespace-nowrap">
                     Apply Now
                 </button>
             </div>
@@ -161,94 +201,61 @@
 
     </main>
 
-    <footer class="w-full bg-brand-dark mt-auto font-sans text-white">
-        <div class="w-full border-t border-brand-text">
-            <div class="max-w-[1596px] mx-auto px-4 md:px-8 xl:px-[162px] py-10 lg:py-[50px] flex flex-col gap-10 lg:gap-[50px]">
+    <footer class="w-full bg-[#1A3129] py-7.5 lg:pb-12 lg:pt-[60px]">
+        <div class="mx-auto w-full max-w-[1596px] px-4 lg:px-20">
+            
+            <div class="flex flex-wrap items-center justify-between gap-y-5 lg:flex-nowrap lg:gap-x-12">
                 
-                <div class="flex flex-wrap xl:flex-nowrap items-center justify-between gap-y-8 w-full">
-                    
-                    <div class="w-1/2 xl:w-auto flex items-center gap-2 font-bold text-xl md:text-2xl">
-                        <img src="./assets/icons/logo-icon.png" alt="Nutritionist Logo" class="w-7 h-7 md:w-[36px] md:h-[36px] object-contain" />
-                        Nutritionist
-                    </div>
-                    
-                    <div class="w-1/2 xl:w-auto flex items-center justify-end xl:order-last cursor-pointer group" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
-                        <span class="font-medium text-sm md:text-base mr-2 md:mr-3">Got To Top</span>
-                        <div class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-brand-btn-dark group-hover:bg-brand-primary transition flex items-center justify-center">
-                            <img src="./assets/icons/arrow-up.png" alt="Up" class="w-4 h-4 md:w-5 md:h-5 object-contain" />
-                        </div>
-                    </div>
-
-                    <nav class="w-full xl:w-auto flex justify-start xl:justify-center order-last xl:order-none">
-                        <ul class="flex flex-wrap gap-x-4 gap-y-3 md:gap-x-6 lg:gap-8 font-medium text-sm md:text-base">
-                            <li><a href="#" class="hover:text-brand-primary transition">Home</a></li>
-                            <li><a href="#" class="hover:text-brand-primary transition">About</a></li>
-                            <li><a href="#" class="text-brand-primary transition font-semibold">Team</a></li> <li><a href="#" class="hover:text-brand-primary transition">Process</a></li>
-                            <li><a href="#" class="hover:text-brand-primary transition">Pricing</a></li>
-                            <li><a href="#" class="hover:text-brand-primary transition">Blog</a></li>
-                            <li><a href="#" class="hover:text-brand-primary transition">Contact</a></li>
-                        </ul>
-                    </nav>
-
+                <div class="order-1 flex w-1/2 items-center gap-2 lg:order-none lg:w-auto shrink-0">
+                    <img src="../blogs/assets/css/img/Petals.png" alt="logo" />
+                    <img src="../blogs/assets/css/icons/Nutritionist.svg" alt="" class="xl:hidden" />
+                    <img src="../blogs/assets/css/icons/Nutritionist-xl.svg" alt="" class="hidden xl:inline" />
                 </div>
 
-                <div class="bg-brand-dark border border-brand-footer-border rounded-xl p-6 lg:px-8 lg:py-6 flex flex-col xl:flex-row justify-between items-center gap-8 xl:gap-4 overflow-hidden">
-                    
-                    <div class="flex flex-col md:flex-row gap-4 w-full xl:w-auto">
-                        <div class="border border-brand-footer-border rounded-lg px-5 py-4 lg:py-3 flex items-center justify-center md:justify-start gap-3 w-full md:w-auto md:flex-1 whitespace-nowrap shrink-0">
-                            <img src="./assets/icons/email-icon.png" alt="Email" class="w-5 h-5 object-contain" /> 
-                            <span class="text-sm md:text-base">hello@squareup.com</span>
-                        </div>
-                        
-                        <div class="border border-brand-footer-border rounded-lg px-5 py-4 lg:py-3 flex items-center justify-center md:justify-start gap-3 w-full md:w-auto md:flex-1 whitespace-nowrap shrink-0">
-                            <img src="./assets/icons/phone-icon.png" alt="Phone" class="w-5 h-5 object-contain" /> 
-                            <span class="text-sm md:text-base">+91 91813 23 2309</span>
-                        </div>
-                        
-                        <div class="border border-brand-footer-border rounded-lg px-5 py-4 lg:py-3 flex items-center justify-center md:justify-start gap-3 w-full md:w-auto md:flex-1 whitespace-nowrap shrink-0">
-                            <img src="./assets/icons/location-icon.png" alt="Location" class="w-5 h-5 object-contain" /> 
-                            <span class="text-sm md:text-base">Somewhere in the World</span>
-                        </div>
-                    </div>
+                <ul class="order-3 flex w-[300px] flex-wrap gap-4 lg:order-none lg:w-auto lg:justify-center lg:gap-8">
+                    <li><a href="../index.html" class="text-[14px] xl:text-[18px] font-semibold text-white transition hover:text-[#CBEA7B]">Home</a></li>
+                    <li><a href="../about/index.html" class="text-[14px] xl:text-[18px] font-semibold text-white transition hover:text-[#CBEA7B]">About</a></li>
+                    <li><a href="../team/index.html" class="text-[14px] xl:text-[18px] font-semibold text-[#CBEA7B] transition hover:text-[#CBEA7B]">Team</a></li> <li><a href="../process/index.html" class="text-[14px] xl:text-[18px] font-semibold text-white transition hover:text-[#CBEA7B]">Process</a></li>
+                    <li><a href="../pricing/index.html" class="text-[14px] xl:text-[18px] font-semibold text-white transition hover:text-[#CBEA7B]">Pricing</a></li>
+                    <li><a href="../blogs/index.html" class="text-[14px] xl:text-[18px] font-semibold text-white transition hover:text-[#CBEA7B]">Blog</a></li>
+                    <li><a href="#" class="text-[14px] xl:text-[18px] font-semibold text-white transition hover:text-[#CBEA7B]">Contact</a></li>
+                </ul>
 
-                    <div class="text-gray-400 text-sm md:text-base text-center xl:text-right whitespace-nowrap shrink-0">
-                        &copy; 2023 Nutritionist. All rights reserved.
-                    </div>
+                <div class="order-2 flex w-1/2 items-center justify-end gap-3 lg:order-none lg:w-auto shrink-0">
+                    <span class="text-[16px] xl:text-[18px] font-semibold text-white">Got To Top</span>
+                    <a href="#top" class="flex h-[48px] w-[48px] items-center justify-center rounded-full bg-[#234338] text-white transition hover:bg-[#CBEA7B] hover:text-[#1A3129] cursor-pointer">
+                        <img src="./assets/icons/arrow-up.png" alt="Up" class="w-7 h-7 object-contain" />
+                    </a>
+                </div>
 
+            </div>
+
+            <div class="mt-7.5 flex flex-col items-center rounded-xl border border-[#2C5446] bg-[#234338] p-5 lg:flex-row lg:justify-between lg:flex-nowrap lg:px-4 lg:py-4 xl:px-5 xl:py-4 mt-10">
+                
+                <div class="flex w-full flex-col gap-4 lg:w-auto lg:flex-row lg:gap-2">
+                    <a href="mailto:hello@squareup.com" class="flex items-center justify-center gap-[5px] rounded-lg border border-[#2C5446] hover:opacity-80 px-6 py-[18px] lg:justify-start lg:p-4">
+                       <img src="./assets/icons/email-icon.png" alt="Email" class="w-4 h-4 md:w-5 md:h-5 object-contain" />
+                        <span class="text-[16px] xl:text-[18px] font-medium text-white">hello@squareup.com</span>
+                    </a>
+
+                    <a href="tel:+9191813232309" class="flex items-center justify-center gap-[5px] rounded-lg border border-[#2C5446] hover:opacity-80 px-6 py-[18px] lg:justify-start lg:p-4">
+                       <img src="./assets/icons/phone-icon.png" alt="Phone" class="w-4 h-4 md:w-5 md:h-5 object-contain" />
+                        <span class="text-[16px] xl:text-[18px] whitespace-nowrap font-medium text-white">+91 91813 23 2309</span>
+                    </a>
+
+                    <div class="min-w-[250px] flex items-center justify-center gap-[5px] rounded-lg border border-[#2C5446] px-6 py-[18px] lg:justify-start lg:px-6">
+                        <img src="./assets/icons/location-icon.png" alt="Location" class="w-4 h-4 md:w-5 md:h-5 object-contain" />
+                        <span class="text-[16px] xl:text-[18px] font-medium text-white">Somewhere in the World</span>
+                    </div>
+                </div>
+
+                <div class="mt-5 text-center text-[14px] lg:text-[16px] xl:text-[18px] text-white lg:mt-0">
+                    © 2023 Nutritionist. All rights reserved.
                 </div>
             </div>
+            
         </div>
     </footer>
 
-    <input type="checkbox" id="mobile-menu-toggle" class="peer hidden" />
-
-    <label for="mobile-menu-toggle" class="fixed inset-0 bg-black/60 z-40 opacity-0 pointer-events-none peer-checked:opacity-100 peer-checked:pointer-events-auto transition-opacity duration-300"></label>
-
-    <div class="fixed top-0 right-0 w-[280px] h-full bg-brand-dark z-50 transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300 ease-in-out shadow-2xl flex flex-col">
-        
-        <div class="flex items-center justify-between p-5 border-b border-brand-green">
-            <div class="flex items-center gap-2 text-white font-bold text-xl">
-                <img src="./assets/icons/logo-icon.png" alt="Logo" class="w-8 h-8 object-contain" />
-                Nutritionist
-            </div>
-            <label for="mobile-menu-toggle" class="text-white hover:text-brand-primary p-1 cursor-pointer">
-                <span class="mdi mdi-close text-2xl leading-none"></span>
-            </label>
-        </div>
-
-        <nav class="flex flex-col gap-6 p-6 text-white font-medium text-lg">
-            <a href="#" class="hover:text-brand-primary transition">Home</a>
-            <a href="#" class="hover:text-brand-primary transition">About</a>
-            <a href="#" class="text-brand-primary transition font-semibold">Team</a> <a href="#" class="hover:text-brand-primary transition">Process</a>
-            <a href="#" class="hover:text-brand-primary transition">Pricing</a>
-            <a href="#" class="hover:text-brand-primary transition">Blog</a>
-        </nav>
-
-        <div class="p-6 mt-auto border-t border-brand-green">
-            <button class="w-full bg-brand-primary text-brand-text font-semibold py-3 md:py-4 rounded-lg hover:bg-opacity-90 transition">
-                Contact Us
-            </button>
-        </div>
-    </div>
 </body>
 </html>
