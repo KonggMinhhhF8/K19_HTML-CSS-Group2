@@ -59,7 +59,7 @@
   <body id="header__btn">
     <header class="bg-dark-green-15 desktop:w-full desktop:fixed z-100 tablet:w-full phone:w-full phone:fixed tablet:fixed">
       <!-- Join Our Personalized Nutrition Demo For Free -->
-      <div class="desktop:w-full desktop:px-[132px] tablet:w-full tablet:px-[80px] flex desktop:h-18 tablet:h-17 tablet:items-center tablet:justify-center desktop:items-center desktop:justify-center border-b border-dark-green-25 desktop:hover:opacity-75 tablet:hover:opacity-75 cursor-pointer phone:w-full desktop:py-0 tablet:py-0 phone:px-4 phone:overflow-hidden phone:relative phone:flex phone:justify-between phone:pt-[40px] phone:pb-[14px]">
+      <div class="desktop:w-full desktop:px-[75px] tablet:px-[50px] tablet:w-full flex desktop:h-18 tablet:h-17 tablet:items-center tablet:justify-center desktop:items-center desktop:justify-center border-b border-dark-green-25 desktop:hover:opacity-75 tablet:hover:opacity-75 cursor-pointer phone:w-full desktop:py-0 tablet:py-0 phone:px-4 phone:overflow-hidden phone:relative phone:flex phone:justify-between phone:pt-[40px] phone:pb-[14px]">
         <img src="./assets/abstract/path.png" class="desktop:w-[194.17px] desktop:h-[100px] desktop:hidden tablet:hidden phone:block phone:z-[-10] phone:absolute phone:top-[50px] phone:left-[-75px] phone:w-[144px] phone:h-[74px]">
         <div class="bg-dark-green-20 h-11 w-full border border-dark-green-25 rounded-md flex items-center justify-between desktop:overflow-hidden tablet:overflow-hidden phone:hover:bg-dark-green-15">
           <img src="./assets/abstract/path.png" class="desktop:block desktop:w-[194.17px] desktop:h-[74px] tablet:block tablet:h-[74px] phone:hidden tablet:pl-[40px]">
@@ -82,7 +82,7 @@
       </div>
       <!-- Menu -->
       <div class="w-full desktop:flex desktop:h-[95px] desktop:justify-center desktop:items-center tablet:justify-center tablet:items-center">
-        <div class="w-full desktop:px-[132px] tablet:px-[80px] desktop:flex desktop:items-center desktop:justify-between phone:px-4 phone:h-[74px] phone:flex phone:items-center phone:justify-between">
+        <div class="w-full desktop:px-[75px] tablet:px-[50px] desktop:flex desktop:items-center desktop:justify-between phone:px-4 phone:h-[74px] phone:flex phone:items-center phone:justify-between">
           <a href="about-page.html">
             <img src="./assets/logo/desktop_logo.png" alt="logo" class="desktop:w-[194.62px] desktop:h-[45px] tablet:h-[34px] tablet:w-[147.05px] phone:w-[147.05px] phone:h-[34px]">
           </a>
@@ -92,44 +92,41 @@
             <!-- desktop:!hidden: fix lỗi khi chuyển từ mobile qua desktop vẫn hiển thị menu khi lớp overlay đang hiển thị. !hidden giúp ẩn đi cả lớp phủ ở desktop dù ở bất kỳ trạng thái nào của checkbox -->
             <label for="header__menu-hambuger" class="hidden peer-checked:block phone:fixed phone:inset-0 phone:bg-black/60 phone:backdrop-blur-sm phone:z-[1000] desktop:!hidden cursor-pointer transition-opacity"></label>
             <label for="header__menu-hambuger" class="desktop:hidden tablet:hidden phone:block cursor-pointer peer-checked:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-green-70">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-6 text-green-70">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
               </svg>
             </label>
-            <div class="hidden peer-checked:flex phone:flex-col phone:fixed phone:top-0 phone:right-0 phone:w-[260px] phone:h-screen phone:bg-dark-green-20 phone:z-[9999] phone:shadow-2xl tablet:flex tablet:static tablet:flex-row tablet:h-auto tablet:w-auto tablet:bg-transparent tablet:shadow-none tablet:justify-center tablet:gap-[30px] tablet:items-center desktop:gap-[40px]">
+            <div class="hidden peer-checked:flex phone:flex-col phone:fixed phone:top-0 phone:right-0 phone:w-[260px] phone:h-screen phone:bg-dark-green-15 phone:z-[9999] phone:shadow-2xl tablet:flex tablet:static tablet:flex-row tablet:h-auto tablet:w-auto tablet:bg-transparent tablet:shadow-none tablet:justify-center tablet:gap-[30px] tablet:items-center desktop:gap-[40px]">
               <div class="tablet:hidden phone:flex phone:justify-end phone:w-full phone:pt-[24px] phone:pr-[24px]">
                 <label for="header__menu-hambuger" class="cursor-pointer">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-green-70 hover:text-green-99 transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-6 text-absolute-white hover:text-green-70 transition-colors">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                   </svg>
                 </label>
               </div>
-              <ul class="desktop:flex desktop:flex-row desktop:mt-0 desktop:gap-[26px] tablet:flex tablet:flex-row tablet:mt-0 tablet:gap-[20px] phone:flex phone:flex-col phone:gap-4 phone:px-[24px] phone:mt-[20px] text-green-97 font-semibold desktop:text-lg leading-[1.5]" id="phone-menu">
-                <li class="cursor-poi  nter transition-all duration-300 ease-in-out hover:text-green-70 desktop:hover:shadow-[inset_0_-2px_0_0_#CBEA7B]">
+              <ul class="desktop:flex desktop:flex-row desktop:mt-0 desktop:gap-[26px] tablet:flex tablet:flex-row tablet:mt-0 tablet:gap-[20px] phone:w-[260px] tablet:w-auto desktop:w-auto phone:items-center phone:flex phone:flex-col phone:gap-5 phone:px-[24px] phone:mt-[20px] text-green-97 font-semibold desktop:text-lg leading-[1.5]" id="phone-menu">
+                <li class="cursor-pointer transition-all duration-300 ease-in-out hover:text-green-70 phone:p-[8px]">
                   <a href="../index.html">Home</a>
                 </li>
-                <li class="cursor-pointer transition-all duration-300 ease-in-out hover:text-green-70 desktop:hover:shadow-[inset_0_-2px_0_0_#CBEA7B] text-green-70">
+                <li class="cursor-pointer transition-all duration-300 ease-in-out hover:text-green-70 text-green-70 phone:p-[8px]">
                   <a href="#!">About</a>
                 </li>
-                <li class="cursor-pointer transition-all duration-300 ease-in-out hover:text-green-70 desktop:hover:shadow-[inset_0_-2px_0_0_#CBEA7B]">
+                <li class="cursor-pointer transition-all duration-300 ease-in-out hover:text-green-70 phone:p-[8px]">
                   <a href="../team/index.html">Team</a>
                 </li>
-                <li class="cursor-pointer transition-all duration-300 ease-in-out hover:text-green-70 desktop:hover:shadow-[inset_0_-2px_0_0_#CBEA7B]">
-                  <a href="">Process</a>
+                <li class="cursor-pointer transition-all duration-300 ease-in-out hover:text-green-70 phone:p-[8px]">
+                  <a href="../process/index.html">Process</a>
                 </li>
-                <li class="cursor-pointer transition-all duration-300 ease-in-out hover:text-green-70 desktop:hover:shadow-[inset_0_-2px_0_0_#CBEA7B]">
+                <li class="cursor-pointer transition-all duration-300 ease-in-out hover:text-green-70 phone:p-[8px]">
                   <a href="../pricing/index.html">Pricing</a>
                 </li>
-                <li class="cursor-pointer transition-all duration-300 ease-in-out hover:text-green-70 desktop:hover:shadow-[inset_0_-2px_0_0_#CBEA7B]">
+                <li class="cursor-pointer transition-all duration-300 ease-in-out hover:text-green-70 phone:p-[8px]">
                   <a href="../blogs/index.html">Blog</a>
                 </li>
               </ul>
               <div class="flex phone:px-[24px] phone:mt-[24px] desktop:p-0 desktop:m-0 tablet:p-0 tablet:m-0">
-                <button class="group transition-all duration-300 ease-in-out flex bg-green-70 py-[14px] px-[24px] overflow-hidden text-lg text-grey-15 font-semibold rounded-lg hover:bg-dark-green-25 hover:text-green-99 cursor-pointer gap-[10px] phone:w-full phone:justify-center">
+                <button class="group transition-all duration-300 ease-in-out flex bg-green-70 py-[14px] px-[24px] overflow-hidden text-lg text-grey-15 font-semibold rounded-lg hover:opacity-80 cursor-pointer gap-[10px] phone:w-full phone:justify-center">
                   <span>Contact Us</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 hidden desktop:group-hover:block">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
-                  </svg>
                 </button>
               </div>
             </div>
@@ -138,7 +135,7 @@
         </div>
       </div>
     </header>
-    <main class="desktop:pt-40 desktop:mx-[132px] phone:mx-[16px] phone:pt-25 tablet:mx-[80px]">
+    <main class="desktop:pt-40 desktop:mx-[75px] phone:mx-[15px] phone:pt-25 tablet:mx-[50px]">
       <div class="desktop:flex desktop:gap-[100px] phone:gap-5 desktop:flex-col items-center desktop:m-auto">
         <div class="pt-25 flex pb-25">
           <img src="./assets/abstract/rec-large.png" alt="rec-large" class="">
@@ -315,14 +312,14 @@
       </div>
     </main>
     <footer class="desktop:px-0 bg-dark-green-15 desktop:mt-[150px] tablet:mt-[100px] phone:mt-[50px] flex flex-col w-full items-center gap-[30px] desktop:gap-[50px] pb-10 desktop:pb-0 tablet:pb-0">
-      <div class="w-full flex flex-wrap justify-between items-center px-4 pt-8 tablet:px-[80px] desktop:px-[132px] desktop:pt-[50px] tablet:pt-[40px] gap-y-8 desktop:gap-y-0">
+      <div class="w-full flex flex-wrap justify-between items-center px-4 pt-8 tablet:px-[50px] desktop:px-[75px] desktop:pt-[50px] tablet:pt-[40px] gap-y-8 desktop:gap-y-0">
         <img src="./assets/logo/desktop_logo.png" alt="logo" class="w-[150px] desktop:w-[195px] h-auto desktop:h-[45px]">
         <div class="phone:order-last w-full desktop:order-none tablet:order-none desktop:w-auto tablet:w-auto flex items-center justify-start">
           <ul class="flex flex-wrap list-none gap-[16px] desktop:gap-[26px] tablet:gap-[16px]">
             <li class="font-semibold text-base desktop:text-lg leading-[1.5] text-absolute-white cursor-pointer transition-all duration-800 ease-in-out hover:text-green-70 hover:font-bold"><a href="../index.html">Home</a></li>
             <li class="font-semibold text-base desktop:text-lg leading-[1.5] text-absolute-white cursor-pointer transition-all duration-800 ease-in-out hover:text-green-70 hover:font-bold text-green-70"><a href="#!">About</a></li>
-            <li class="font-semibold text-base desktop:text-lg leading-[1.5] text-absolute-white cursor-pointer transition-all duration-800 ease-in-out hover:text-green-70 hover:font-bold"><a href="">Team</a></li>
-            <li class="font-semibold text-base desktop:text-lg leading-[1.5] text-absolute-white cursor-pointer transition-all duration-800 ease-in-out hover:text-green-70 hover:font-bold"><a href="">Process</a></li>
+            <li class="font-semibold text-base desktop:text-lg leading-[1.5] text-absolute-white cursor-pointer transition-all duration-800 ease-in-out hover:text-green-70 hover:font-bold"><a href="../team/index.html">Team</a></li>
+            <li class="font-semibold text-base desktop:text-lg leading-[1.5] text-absolute-white cursor-pointer transition-all duration-800 ease-in-out hover:text-green-70 hover:font-bold"><a href="../process/index.html">Process</a></li>
             <li class="font-semibold text-base desktop:text-lg leading-[1.5] text-absolute-white cursor-pointer transition-all duration-800 ease-in-out hover:text-green-70 hover:font-bold"><a href="../pricing/index.html">Pricing</a></li>
             <li class="w-full desktop:hidden tablet:hidden"></li>
             <li class="font-semibold text-base desktop:text-lg leading-[1.5] text-absolute-white cursor-pointer transition-all duration-800 ease-in-out hover:text-green-70 hover:font-bold"><a href="../blogs/index.html">Blog</a></li>
@@ -333,14 +330,14 @@
           <span class=" desktop:block tablet:block font-semibold desktop:text-lg tablet:text-[16px] leading-[1.5] text-absolute-white">Got To Top</span>
           <a href="#header__btn">
             <button class="rounded-[50%] bg-dark-green-20 p-[10px] desktop:p-[14px] tablet:p-[12px] group hover:bg-absolute-white cursor-pointer transition-all duration-800 ease-in-out">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="transition-all duration-800 ease-in-out group-hover:text-absolute-black text-absolute-white size-5 desktop:size-6">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="transition-all duration-800 ease-in-out group-hover:text-absolute-black text-absolute-white size-5 desktop:size-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
               </svg>
             </button>
           </a>
         </div>
       </div>
-      <div class="w-full px-4 desktop:px-[132px] tablet:px-[80px] py-10">
+      <div class="w-full px-4 desktop:px-[75px] tablet:px-[50px] py-10">
         <div class="flex flex-col desktop:flex-row tablet:flex-row bg-dark-green-20 rounded-lg border border-dark-green-25 items-center justify-between p-5 desktop:px-[30px] desktop:py-[24px] tablet:px-[24px] tablet:py-[20px] gap-6">
           <div class="flex flex-col desktop:flex-row tablet:flex-row gap-4 desktop:gap-5 tablet:gap-4 w-full desktop:w-auto tablet:w-auto">
             <div class="flex items-center phone:justify-center gap-[6px] p-[14px] border border-dark-green-25 rounded-md cursor-pointer group hover:bg-absolute-white transition-all duration-800 ease-in-out whitespace-nowrap">
